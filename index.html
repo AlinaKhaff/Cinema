@@ -6,35 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .text1 {
-            font-size: 15px;
-            padding: 2px;
-            border-radius: 2px;
-
-        }
-
-        .text {
-            font-size: 15px;
-            padding: 2px;
-            border-radius: 2px;
-        }
-
-        table {
-            border-collapse: collapse;
-        }
-
-        td,
-        th {
-            border: 1px solid #000;
-            padding: 5px;
-        }
-
-        .first {
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
+<style>
+    .text1 {
+        font-size: 15px;
+        padding: 2px;
+        border-radius: 2px;
+
+    }
+
+    .text {
+        font-size: 15px;
+        padding: 2px;
+        border-radius: 2px;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+    .first {
+        text-align: center;
+    }
+</style>
+
 
 <body>
     <div style="background-image: url('images/scene1bg.png'); background-size: 100% 100% contain;">
@@ -43,7 +38,7 @@
                 <img src="images/logo.svg" alt="Логотип сайта Иннополис">
             </a>
             <sub><a href="tel: +78003551256"> +7(800) 355 12-56</a>
-                 <a href="mailto:kino@innopolis.ru"> kino@innopolis.ru</a>
+                <a href="mailto:kino@innopolis.ru"> kino@innopolis.ru</a>
                 <span>ул.Спортивная д.1</span>
                 <b>Заказать звонок</b>
                 <span>RU</span> </sub>
@@ -51,11 +46,11 @@
 
 
         <section>
-            <sub><b><a href="#EVENT DETAILS"> EVENT DETAILS</a></b>
+                <b><a href="#EVENT DETAILS"> EVENT DETAILS</a></b>
                 <b> <a href="#SPEAKERS">SPEAKERS </a></b>
                 <b> <a href="#SPONSORS">SPONSORS</a></b>
                 <b> <a href="#PAST EVENTS"> PAST EVENTS</a></b>
-                <b> <a href="#CONTACT">CONTACT</a> </b> </sub>
+                <b> <a href="#CONTACT">CONTACT</a> </b>
         </section>
         <h1>
             <p> <span>Закажите билет в кино</span></p>
@@ -84,7 +79,7 @@
         </div>
         <section>
             <h3>
-                    <p><b>Большие экраны</b>
+                <p><b>Большие экраны</b>
                     <b>Объёмный звук</b>
                     <b>Удобные кресла</b> </p>
             </h3>
@@ -131,383 +126,417 @@
         </section>
         <div id="SPEAKERS">
             <h2>
-                <p><b>Выберите фильм</b></p>
+                <div class="block03">
+                    <div class="container">
+                        <p><b>Выберите фильм</b></p>
             </h2>
-        </div>
+            <table class="block03__table">
+                <thead>
+                    <h3>
+                        <tr>
+                            <td></td>
+                            <td class="first">
+                                <a href="#" class="block03__link">
+                                    <b>Начало сеанса</b>
+                                        <svg width="9" height="5" viewBox="0 0 9 5" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.49182 0.5L8.49182 5H0.491821L4.49182 0.5Z" fill="white" />
+                                        </svg>
+                                </a>
+                            </td>
+                            <td class="first">
+                                <a href="#" class="block03__link">
+                                    <b>Название фильма</b>
+                                    <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 4.5L8 0H0L4 4.5Z" fill="white" />
+                                    </svg>
+                                </a>
+                            </td>
 
-        <table>
-            <thead>
-                <h3>
-                    <tr class="first">
-                        <td></td>
-                        <td></td><p><b>Начало сеанса</b></td>
-                        <td><b>Название фильма</b></td>
-                        <td><b>Жанр</b></p>
-                        </td>
+
+                            <td class="first">
+                                <a href="#" class="block03__link" >
+                                    <p><b>Жанр</b></p>
+                                </a>
+                            </td>
+                        </tr>
+                    </h3>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> <input type="checkbox" checked /> </td>
+                        <td>10:00</td>
+                        <td> <a href="https://www.kinopoisk.ru/film/838/" target="_blank" .>Человек паук </a></td>
+                        <td>Фантастика, боевик, приключения</td>
                     </tr>
+                    <tr>
+                        <td> <input type="checkbox" checked /> </td>
+                        <td>12:00</td>
+                        <td><a href="https://www.kinopoisk.ru/film/1122114/" target="_blank" .>Собачья жизнь 2</a></td>
+                        <td>Фэнтэзи, драма, комедия</td>
+                    </tr>
+
+                    <tr>
+                        <td> <input type="checkbox" checked /> </td>
+                        <td>14:00</td>
+                        <td><a href="https://www.kinopoisk.ru/film/482/" target="_blank" .>История игрушек 4</a></td>
+                        <td>История игрушек 4</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td> <input type="checkbox" checked /> </td>
+                        <td>16:00</td>
+                        <td><a href="https://www.kinopoisk.ru/film/693730/" target="_blank" .>Люди в чёрном:
+                                Интэрнэшнл</a>
+                        </td>
+                        <td>Фантастика, боевик, комедия</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div>
+                <p>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore <br> magna aliqua. Ut enim ad minim veniam.
+                    </span>
+                </p>
+            </div>
+            <div id="SPONSORS">
+                <h2>
+                    <blockquote><b>Подарок каждому!</b></blockquote>
+                </h2>
+            </div>
+            <div>
+                <blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore <br> magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum
+                        pulvinar etiam non quam. <br> Ut pharetra sit amet aliquam id diam maecenas. </p>
+                    <p><br> Nunc vel risus commodo viverra maecenas accumsan. Morbi enim nunc faucibus a. Mauris commodo
+                        quis <br> imperdiet massa.Sed elementum tempus egestas sed sed risus pretium quam vulputate.
+                        <br>
+                        Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. <br> </p>
+                    <p> Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut
+                        pharetra sit <br> amet aliquam id diam maecenas. Sed elementum tempus egestas sed sed risus
+                        pretium
+                        quam vulputate. <br> Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus.
+                        Facilisi
+                        cras fermentum odio eu feugiat <br> pretium nibh. Eu nisl nunc mi ipsum. Nibh sit amet commodo
+                        nulla
+                        facilisi nullam vehicula ipsum. </p>
+                </blockquote>
+            </div>
+            <div>
+                <p>
+                    <input type="submit" value="Получить подарок" required>
+                </p>
+            </div>
+            <div>
+                <h2>
+                    <p><b>Фильмы</b></p>
+                </h2>
+            </div>
+            <div>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et
+                    dolore <br> magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum
+                    pulvinar
+                    etiam non quam.</span>
+            </div>
+            <div>
+                <h3>
+                    <p><b>Выживший</b></p>
                 </h3>
-            </thead>
-            <tbody>
-                <tr>
-                    <td> <input type="checkbox" checked /> </td>
-                    <td>10:00</td>
-                    <td> <a href="https://www.kinopoisk.ru/film/838/" target="_blank" .>Человек паук </a></td>
-                    <td>Фантастика, боевик, приключения</td>
-                </tr>
-                <tr>
-                    <td> <input type="checkbox" checked /> </td>
-                    <td>12:00</td>
-                    <td><a href="https://www.kinopoisk.ru/film/1122114/" target="_blank" .>Собачья жизнь 2</a></td>
-                    <td>Фэнтэзи, драма, комедия</td>
-                </tr>
-
-                <tr>
-                    <td> <input type="checkbox" checked /> </td>
-                    <td>14:00</td>
-                    <td><a href="https://www.kinopoisk.ru/film/482/" target="_blank" .>История игрушек 4</a></td>
-                    <td>История игрушек 4</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td> <input type="checkbox" checked /> </td>
-                    <td>16:00</td>
-                    <td><a href="https://www.kinopoisk.ru/film/693730/" target="_blank" .>Люди в чёрном: Интэрнэшнл</a>
-                    </td>
-                    <td>Фантастика, боевик, комедия</td>
-                </tr>
-            </tfoot>
-        </table>
-
-        <div>
-            <p>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore <br> magna aliqua. Ut enim ad minim veniam.
-                </span>
-            </p>
-        </div>
-        <div id="SPONSORS">
-            <h2>
-                <blockquote><b>Подарок каждому!</b></blockquote>
-            </h2>
-        </div>
-        <div>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore <br> magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum
-                    pulvinar etiam non quam. <br> Ut pharetra sit amet aliquam id diam maecenas. </p>
-                <p><br> Nunc vel risus commodo viverra maecenas accumsan. Morbi enim nunc faucibus a. Mauris commodo
-                    quis <br> imperdiet massa.Sed elementum tempus egestas sed sed risus pretium quam vulputate. <br>
-                    Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. <br> </p>
-                <p> Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut
-                    pharetra sit <br> amet aliquam id diam maecenas. Sed elementum tempus egestas sed sed risus pretium
-                    quam vulputate. <br> Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Facilisi
-                    cras fermentum odio eu feugiat <br> pretium nibh. Eu nisl nunc mi ipsum. Nibh sit amet commodo nulla
-                    facilisi nullam vehicula ipsum. </p>
-            </blockquote>
-        </div>
-        <div>
-            <p>
-                <input type="submit" value="Получить подарок"required>
-            </p>
-        </div>
-        <div>
-            <h2>
-                <p><b>Фильмы</b></p>
-            </h2>
-        </div>
-        <div>
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore <br> magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar
-                etiam non quam.</span>
-        </div>
-        <div>
-            <h3>
-                <p><b>Выживший</b></p>
-            </h3>
-            <div>
-                <span>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br>
-                    incididunt ut labore et dolore magna aliqua. <br> Nibh mauris cursus mattis molestie a iaculis at.
-                    <br> Vel quam elementum pulvinar etiam non quam. <br> Ut pharetra sit amet aliquam id diam maecenas.
-                </span>
-            </div>
-        </div>
-        <div id="PAST EVENTS">
-            <h2>
-                <p><b>Товары</b></p>
-            </h2>
-            <div>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore <br> magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam
-                    elementum pulvinar etiam non quam.</span>
-            </div>
-        </div>
-        <section>
-            <h3>
-                <p>
-                    <b>Coca-cola</b>
-                    <b>Брелок “Железный человек”</b>
-                    <b>Постер “Мстители”</b>
-                </p>
-            </h3>
-        </section>
-        <div id="CONTACT">
-            <h2>
-                <p> <b>Отзывы</b></p>
-            </h2>
-        </div>
-        <div>
-            <p>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore <br> magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam
-                    elementum pulvinar etiam non quam.</span>
-            </p>
-        </div>
-
-        <section>
-            <h3>
-                <p>
-                    <b>Елена Еленова</b>
-                    <b>Борис Борисов</b>
-                    <b>Леонардо ДиКаприо</b>
-                </p>
-            </h3>
-        </section>
-        <div>
-            <p>
-                <span>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br>
-                    incididunt ut labore et dolore magna <br> aliqua. </span> </p>
-            <div>
-                <p> <span>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br>
-                        incididunt ut labore et dolore magna aliqua. </span></p>
                 <div>
-                    <p> <span>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor
-                            incididunt ut labore et dolore <br> magna aliqua. </span></p>
-
+                    <span>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br>
+                        incididunt ut labore et dolore magna aliqua. <br> Nibh mauris cursus mattis molestie a iaculis
+                        at.
+                        <br> Vel quam elementum pulvinar etiam non quam. <br> Ut pharetra sit amet aliquam id diam
+                        maecenas.
+                    </span>
                 </div>
             </div>
-        </div>
-        <div>
-            <h3>
-                <p> <b>Обратная связь</b></p>
-            </h3>
-        </div>
-        <form action="/order.php">
-            <div>
-                <p><span><input class="text" id="input1" type="text" name="username" value=""
-                                placeholder="Полное имя" required></span></p>
+            <div id="PAST EVENTS">
+                <h2>
+                    <p><b>Товары</b></p>
+                </h2>
+                <div>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore <br> magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam
+                        elementum pulvinar etiam non quam.</span>
+                </div>
             </div>
-
-            <div>
-                <p><input class="text" id="input2" type="text" name="email" value="" placeholder="Введите email"
-                required /></p>
-            </div>
-
-            <div>
-                <label>
-                    <select name="place">
-                        <option disabled selected value="Не выбрано">Не выбрано</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                </label>
-            </div>
-            <div>
-                 <p><span><input class="text1" id="input4" type="text" name="username" value=""
-                placeholder="Напиши свой отзыв" required></span></p>
-             </div>
-
-
-            <div>
-                <label for="chb1">
+            <section>
+                <h3>
                     <p>
-                    <input type="checkbox" required>
-                    <span>Я согласен на обработку своих персональных данных</span>
+                        <b>Coca-cola</b>
+                        <b>Брелок “Железный человек”</b>
+                        <b>Постер “Мстители”</b>
                     </p>
-                </label>
+                </h3>
+            </section>
+            <div id="CONTACT">
+                <h2>
+                    <p> <b>Отзывы</b></p>
+                </h2>
+            </div>
+            <div>
+                <p>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore <br> magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam
+                        elementum pulvinar etiam non quam.</span>
+                </p>
+            </div>
+
+            <section>
+                <h3>
+                    <p>
+                        <b>Елена Еленова</b>
+                        <b>Борис Борисов</b>
+                        <b>Леонардо ДиКаприо</b>
+                    </p>
+                </h3>
+            </section>
+            <div>
+                <p>
+                    <span>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br>
+                        incididunt ut labore et dolore magna <br> aliqua. </span> </p>
+                <div>
+                    <p> <span>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br>
+                            incididunt ut labore et dolore magna aliqua. </span></p>
+                    <div>
+                        <p> <span>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod
+                                tempor
+                                incididunt ut labore et dolore <br> magna aliqua. </span></p>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>
+                    <p> <b>Обратная связь</b></p>
+                </h3>
+            </div>
+            <form action="/order.php">
+                <div>
+                    <p><span><input class="text" id="input1" type="text" name="username" value=""
+                                placeholder="Полное имя" required></span></p>
+                </div>
+
+                <div>
+                    <p><input class="text" id="input2" type="text" name="email" value="" placeholder="Введите email"
+                            required /></p>
+                </div>
+
+                <div>
+                    <label>
+                        <select name="place">
+                            <option disabled selected value="Не выбрано">Не выбрано</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </label>
+                </div>
+                <div>
+                    <p><span><input class="text1" id="input4" type="text" name="username" value=""
+                                placeholder="Напиши свой отзыв" required></span></p>
+                </div>
+
+
+                <div>
+                    <label for="chb1">
+                        <p>
+                            <input type="checkbox" required>
+                            <span>Я согласен на обработку своих персональных данных</span>
+                        </p>
+                    </label>
+                </div>
+
+                <div>
+                    <p>
+                        <input type="submit" value="Заказать" required>
+                    </p>
+                </div>
+            </form>
+            <div>
+                <span>​Университетская, 1</span>
+            </div>
+            <div>
+                <span>университет Иннополис</span>
+            </div>
+            <div>
+                <sup>
+                    <p>
+                        <b>SITE</b>
+                        <b>CONTACT</b>
+                    </p>
+                </sup>
+            </div>
+            <div>
+                <sup>
+                    <span>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br>
+                        incididunt ut labore et dolore magna <br> aliqua. Ut enim ad minim veniam</span>
+                </sup>
+            </div>
+            <div>
+                <span>EVENT DETAILS</span>
+                <span>+7 (800) 355 12-56</span>
+            </div>
+            <div>
+                <span>SPEAKERS</span>
+                <span>kino@innopolis.ru</span>
+            </div>
+            <div>
+                <span>SPONSORS</span>
+                <span>420500, г. Иннополис ул.Университетская, д.1</span>
+            </div>
+            <div>
+                <span>PAST EVENTS </span>
+                <span>Как добраться</span>
+            </div>
+            <div>
+                <span>CONTACT</span>
+                <span>Все контакты</span>
             </div>
 
             <div>
                 <p>
-                    <input type="submit"value="Заказать" required>
+                    <footer> Copyright @ 2020 Innopolis University . All Rights Reserved.</footer>
                 </p>
             </div>
-        </form>
-        <div>
-            <span>​Университетская, 1</span>
-        </div>
-        <div>
-            <span>университет Иннополис</span>
-        </div>
-        <div>
-            <sup>
-                <p>
-                    <b>SITE</b>
-                    <b>CONTACT</b>
-                </p>
-            </sup>
-        </div>
-        <div>
-            <sup>
-                <span>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br>
-                    incididunt ut labore et dolore magna <br> aliqua. Ut enim ad minim veniam</span>
-            </sup>
-        </div>
-        <div>
-            <span>EVENT DETAILS</span>
-            <span>+7 (800) 355 12-56</span>
-        </div>
-        <div>
-            <span>SPEAKERS</span>
-            <span>kino@innopolis.ru</span>
-        </div>
-        <div>
-            <span>SPONSORS</span>
-            <span>420500, г. Иннополис ул.Университетская, д.1</span>
-        </div>
-        <div>
-            <span>PAST EVENTS </span>
-            <span>Как добраться</span>
-        </div>
-        <div>
-            <span>CONTACT</span>
-            <span>Все контакты</span>
-        </div>
+            <section>
+                <h2>
+                    <nav>
+                        <p><b> <a href="https://www.kinopoisk.ru/film/900052/" target="_blank" .
+                                    title="сайт Кинопоиск Фильм Лед">Лёд</a>
+                            </b></p>
+                    </nav>
+                </h2>
 
+        </div>
         <div>
             <p>
-        <footer> Copyright @ 2020 Innopolis University . All Rights Reserved.</footer>
+                <span>5.0</span>
+                <b>9/10</b>
+                <span>Rotten Tomatoes</span></p>
+        </div>
+        <div>
+            <p>
+                <b>25 Ноябрь 2019</b>
+                <b>2.5K Views</b>
+                <b>200 Likes</b> </p>
+        </div>
+        <div>
+            <p>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim <br> veniam. Duis aute irure dolor in reprehenderit
+                    in
+                    voluptate velit esse cillum <br> dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non
+                    <br> proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+                </span>
             </p>
         </div>
-        <section>
-            <h2>
-                <nav>
-                    <p><b> <a href="https://www.kinopoisk.ru/film/900052/" target="_blank" .
-                                title="сайт Кинопоиск Фильм Лед">Лёд</a>
-                        </b></p>
-                </nav>
-            </h2>
-
-    </div>
-    <div>
-        <p>
-            <span>5.0</span>
-            <b>9/10</b>
-            <span>Rotten Tomatoes</span></p>
-    </div>
-    <div>
-        <p>
-            <b>25 Ноябрь 2019</b>
-            <b>2.5K Views</b>
-            <b>200 Likes</b> </p>
-    </div>
-    <div>
-        <p>
-            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim <br> veniam. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum <br> dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                <br> proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
-            </span>
-        </p>
-    </div>
-    <div>
-        <b>Страна</b>
-        <span>Дания</span>
-    </div>
-    <div>
-        <b>Режиссер</b>
-        <span>Джеспер Финк, Михаэль Ноер</span>
-    </div>
-    <div>
-        <b>Продюсер</b>
-        <span>Матильда Аппелин, Рене Эзра, Томас Радур, ...</span>
-    </div>
-    <div>
-        <b>Оператор</b>
-        <span> Стурла Брандт Грёвлен</span>
-    </div>
-    <div>
-        <b>Композитор</b>
-        <span>Руне Тонсгор Сёренсен</span>
-    </div>
-    <div>
-        <b>Художник</b>
-        <span>Сорен Шварцберг, Луиз Ниссен</span>
-    </div>
-    <div>
-        <b>Время</b>
-        <b>104 мин. / 01:44</b>
-    </div>
-    </section>
-    <section>
-        <h2>
-            <nav>
-                <p><b><a href="https://www.kinopoisk.ru/film/966995/" target="_blank"
-                title="Сайт Кинопоиск Фильм Живое ">Живое</a></b></p>
-            </nav>
-        </h2>
-        </div>
-        <p>5.0
-            <b>9/10</b>
-            Rotten Tomatoes</p>
-
-        <p> <b>25 Ноябрь 2019</b>
-            <b>2.5K Views</b>
-            <b>200 Likes</b></p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim <br> veniam. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum <br> dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non <br> proident, sunt
-            in culpa qui officia deserunt mollit anim id est laborum. <br>
-        </p>
-
         <div>
             <b>Страна</b>
             <span>Дания</span>
         </div>
-
         <div>
             <b>Режиссер</b>
-            <span>Михаэль Ноер</span>
-        </div>
-
-        <div>
-            <b>Сценарий</b>
             <span>Джеспер Финк, Михаэль Ноер</span>
         </div>
-
         <div>
             <b>Продюсер</b>
             <span>Матильда Аппелин, Рене Эзра, Томас Радур, ...</span>
         </div>
-
         <div>
             <b>Оператор</b>
-            <span>Стурла Брандт Грёвлен</span>
+            <span> Стурла Брандт Грёвлен</span>
         </div>
-
         <div>
             <b>Композитор</b>
             <span>Руне Тонсгор Сёренсен</span>
         </div>
-
         <div>
             <b>Художник</b>
             <span>Сорен Шварцберг, Луиз Ниссен</span>
         </div>
-
         <div>
             <b>Время</b>
             <b>104 мин. / 01:44</b>
         </div>
+        </section>
+        <section>
+            <h2>
+                <nav>
+                    <p><b><a href="https://www.kinopoisk.ru/film/966995/" target="_blank"
+                                title="Сайт Кинопоиск Фильм Живое ">Живое</a></b></p>
+                </nav>
+            </h2>
+    </div>
+    <p>5.0
+        <b>9/10</b>
+        Rotten Tomatoes</p>
+
+    <p> <b>25 Ноябрь 2019</b>
+        <b>2.5K Views</b>
+        <b>200 Likes</b></p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim <br> veniam. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum <br> dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non <br> proident, sunt
+        in culpa qui officia deserunt mollit anim id est laborum. <br>
+    </p>
+
+    <div>
+        <b>Страна</b>
+        <span>Дания</span>
+    </div>
+
+    <div>
+        <b>Режиссер</b>
+        <span>Михаэль Ноер</span>
+    </div>
+
+    <div>
+        <b>Сценарий</b>
+        <span>Джеспер Финк, Михаэль Ноер</span>
+    </div>
+
+    <div>
+        <b>Продюсер</b>
+        <span>Матильда Аппелин, Рене Эзра, Томас Радур, ...</span>
+    </div>
+
+    <div>
+        <b>Оператор</b>
+        <span>Стурла Брандт Грёвлен</span>
+    </div>
+
+    <div>
+        <b>Композитор</b>
+        <span>Руне Тонсгор Сёренсен</span>
+    </div>
+
+    <div>
+        <b>Художник</b>
+        <span>Сорен Шварцберг, Луиз Ниссен</span>
+    </div>
+
+    <div>
+        <b>Время</b>
+        <b>104 мин. / 01:44</b>
+    </div>
     </section>
 
     <p> <b>Другие фильмы</b></p>
@@ -551,12 +580,6 @@
     </section>
 
 
-    <ul>
-        <li>element1</li>
-        <li>element2</li>
-        <li>element3</li>
-        <li>element4</li>
-    </ul>
 </body>
 
 </html>

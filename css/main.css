@@ -1,0 +1,35 @@
+.block03__table{
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.block03__table a{
+    color: #fff;
+}
+
+.block03__table tbody tr:nth-child(2n+1) {
+    background: #4c4d4f; 
+    
+}
+.block03__table tbody tr:nth-child(2n) {
+    background: #6c6c6c; 
+} 
+.block03__table thead  {
+    background-color: #a3cc40;
+    
+}
+.block03__table tfoot {
+    background-color: #6c6c6c;      
+}
+.block03__table td{
+    padding: 10px 20px;
+    
+}
+.block03__link{
+    font-weight:600 ;
+    font-size: 20px;
+    line-height: 1.3;
+
+}
