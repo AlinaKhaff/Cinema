@@ -1,0 +1,72 @@
+/** Медиа – правила */
+@media screen and (max-width:1200px) {
+
+    html {
+        font-size: 1.63vw;
+    }
+
+    .block02__info {
+        position: absolute;
+        background: #FFFFFF;
+        box-shadow: 0px 1.5rem 0.8rem rgb(163 204 64 / 18%);
+        border-radius: 0.7rem;
+        padding: 2.7rem 2.9rem;
+        max-width: 27.3rem;
+        right: 6.8rem;
+        bottom: -21.3rem;
+    }
+
+    .block02__image-wrap>img {
+        display: block;
+        width: 100%;
+        /* Ширина изображений */
+        margin: -10% 0 0 0;
+    }
+
+    .simple-text {
+        padding: 2.5% 0 15.5% 0;
+    }
+
+    .block05__bg>img {
+        display: block;
+        width: 100%;
+        /* Ширина изображений */
+    }
+
+    .block05__movie1 {
+        float: left;
+        width: 33.33%;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        height: 17.5rem;
+    }
+
+
+}
+
+
+
+@media screen and (max-width:850px) {
+
+    html {
+        font-size: 2.0vw;
+    }
+    .block05__bg>img {
+        display: block;
+        width: 100%;
+        /* Ширина изображений */
+    }
+
+    .block05__movie1 {
+        float: left;
+        width: 33.33%;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        height: 17.5rem;
+    }
+
+}
