@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/media.css">
+
+    <link rel="stylesheet" href="libs/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl/owl.theme.default.css">
+
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="libs/owl/owl.carousel.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/film-table.js"></script>
+
 </head>
 <style> </style>
 
@@ -69,16 +78,24 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                                 <nav class="block01__row2">
-                                    <p>
-                                        <a class="link-white block01__even" href="#EVENT DETAILS"> EVENT DETAILS</a>
-                                        <a class="link-white block01__speakers" href="#SPEAKERS">SPEAKERS </a>
-                                        <a class="link-white block01__sponsors" href="#SPONSORS">SPONSORS</a>
-                                        <a class="link-white block01__past" href="#PAST EVENTS"> PAST EVENTS</a>
-                                        <a class="link-white block01__contact" href="#CONTACT">CONTACT</a>
-                                    </p>
+                                    <ul>
+                                        <li>
+                                            <a class="link-white block01__even" href="#EVENT DETAILS"> EVENT DETAILS</a>
+                                        </li>
+                                        <li>
+                                            <a class="link-white block01__speakers" href="#SPEAKERS">SPEAKERS </a>
+                                        </li>
+                                        <li>
+                                            <a class="link-white block01__sponsors" href="#SPONSORS">SPONSORS</a>
+                                        </li>
+                                        <li>
+                                            <a class="link-white block01__past" href="#PAST EVENTS"> PAST EVENTS</a>
+                                        </li>
+                                        <li>
+                                            <a class="link-white block01__contact" href="#CONTACT">CONTACT</a>
+                                        </li>
+                                    </ul>
                                 </nav>
                             </div>
                         </div>
@@ -160,7 +177,7 @@
             <div class="block02__pluses text-centr">
                 <div class="block02__plus">
                     <div class="block02__image-wrap">
-                        <img src="images/3.png" alt="Уютная атмосфера" class="scale" />
+                        <img src="images/4.png" alt="Уютная атмосфера" class="scale" />
                     </div>
                     <p class="block02__text3">
                         Уютная атмосфера
@@ -172,7 +189,7 @@
                 </div>
                 <div class="block02__plus">
                     <div class="block02__image-wrap">
-                        <img src="images/4.png" alt="Полное погружение" class="scale" />
+                        <img src="images/5.png" alt="Полное погружение" class="scale" />
                     </div>
                     <p class="block02__text3">
                         Полное погружение
@@ -184,7 +201,7 @@
                 </div>
                 <div class="block02__plus">
                     <div class="block02__image-wrap">
-                        <img src="images/5.png" alt="Поцелуи на заднем ряду" class="scale" />
+                        <img src="images/6.png" alt="Поцелуи на заднем ряду" class="scale" />
                     </div>
                     <p class="block02__text3">
                         Поцелуи на заднем ряду
@@ -203,10 +220,28 @@
             <p class="header block03__header" id="SPEAKERS">Выберите фильм </p>
             <div class="block03__table-wrap">
                 <div class="block03__table">
-                    <div class="block03__tablecol1">
+                    <div class="block03__link"></div>
+                    <a href="#" class="block03__link">
+                        Начало сеанса
+                        <svg class="block03__link-svg" width="9" height="5" viewBox="0 0 9 5" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.49182 0.5L8.49182 5H0.491821L4.49182 0.5Z" fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#" class="block03__link">
+                        Название фильма
+                        <svg class="block03__link-svg" width="8" height="5" viewBox="0 0 8 5" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 4.5L8 0H0L4 4.5Z" fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#" class="block03__link">
+                        <p>Жанр</p>
+                    </a>
 
-                        <div class="block03__link">&nbsp;</div>
-                        <p class="block03__color1">
+
+                    
+                        <p id="block03__row" class="block03__line1 block03__line-svg ">
                             <svg width="11" height="9" viewBox="0 0 11 9" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -214,8 +249,18 @@
                                     fill="white" />
                             </svg>
                         </p>
+                   
+                    <span class="block03__line1">10:00</span>
+                    <a href="https://www.kinopoisk.ru/film/838/" class="block03__line1" target="_blank">Человек
+                        паук
+                    </a>
+                    <span class="block03__line1">Фантастика, боевик, приключения</span>
 
-                        <p class="block03__color2">
+
+
+
+                   
+                        <p class="block03__line2 block03__line-svg">
                             <svg width="11" height="9" viewBox="0 0 11 9" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -223,8 +268,17 @@
                                     fill="white" />
                             </svg>
                         </p>
-                        <p class="block03__color1">
+                    
+                    <span class="block03__line2">12:00</span>
+                    <a href="https://www.kinopoisk.ru/film/1122114/" class="block03__line2" target="_blank">Собачья
+                        жизнь 2</a>
+                    <span class="block03__line2">Фэнтэзи, драма, комедия</span>
 
+
+
+
+                    
+                        <p class="block03__line1 block03__line-svg">
                             <svg width="11" height="9" viewBox="0 0 11 9" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -232,8 +286,16 @@
                                     fill="white" />
                             </svg>
                         </p>
-                        <p class="block03__color2">
+              
+                    <span class="block03__line1">14:00</span>
 
+                    <a href="https://www.kinopoisk.ru/film/482/" class="block03__line1" target="_blank">История
+                        игрушек
+                        4</a>
+                    <span class="block03__line1">Мультфильм, фэнтэзи, комедия</span>
+
+                   
+                        <p class="block03__line2 block03__line-svg ">
                             <svg width="11" height="9" viewBox="0 0 11 9" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -241,69 +303,26 @@
                                     fill="white" />
                             </svg>
                         </p>
-                    </div>
-
-                    <div class="block03__tablecol2">
-                        <a href="#" class="block03__link">
-                            Начало сеанса
-                            <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.49182 0.5L8.49182 5H0.491821L4.49182 0.5Z" fill="white" />
-                            </svg>
-                        </a>
-
-                        <span class="block03__color1">10:00</span>
-                        <span class="block03__color2">12:00</span>
-                        <span class="block03__color1">14:00</span>
-                        <span class="block03__color2">16:00</span>
-                    </div>
-
-                    <div class="block03__tablecol3">
-                        <a href="#" class="block03__link">
-                            Название фильма
-                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 4.5L8 0H0L4 4.5Z" fill="white" />
-                            </svg>
-                        </a>
-
-                        <a href="https://www.kinopoisk.ru/film/838/" class="block03__color1" target="_blank">Человек
-                            паук
-                        </a>
-                        <a href="https://www.kinopoisk.ru/film/1122114/" class="block03__color2" target="_blank">Собачья
-                            жизнь 2</a>
-
-                        <a href="https://www.kinopoisk.ru/film/482/" class="block03__color1" target="_blank">История
-                            игрушек
-                            4</a>
-
-                        <a href="https://www.kinopoisk.ru/film/693730/" class="block03__color2" target="_blank">Люди в
-                            чёрном:
-                            Интэрнэшнл</a>
-
-                    </div>
-
-                    <div class="block03__tablecol4">
-                        <a href="#" class="block03__link">
-                            <p>Жанр</p>
-                        </a>
-
-                        <span class="block03__color1">Фантастика, боевик, приключения</span>
-                        <span class="block03__color2">Фэнтэзи, драма, комедия</span>
-                        <span class="block03__color1">История игрушек 4</span>
-                        <span class="block03__color2">Фантастика, боевик, комедия</span>
-                    </div>
+                   
+                    <span class="block03__line2">16:00</span>
+                    <a href="https://www.kinopoisk.ru/film/693730/" class="block03__line2" target="_blank">Люди в
+                        чёрном:
+                        Интэрнэшнл</a>
+                    <span class="block03__line2">Фантастика, боевик, комедия</span>
                 </div>
+            </div>
 
-                <div class="block03_text_wrapper">
-                    <p class="simple-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam.
-                    </p>
-                </div>
 
+            <div class="block03_text_wrapper">
+                <p class="simple-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
             </div>
         </div>
     </div>
+
 
 
     <!-- <div class="block03">
@@ -575,7 +594,7 @@
                     </div>
                 </div>
             </div>
-            <div class="block05__movie">
+            <div class="block05__movie block05__movie-mobile">
                 <div class="block05__movie1">
                     <div class="block05__bg">
                         <img src="images/unnamed (1) 1.png" alt="Постер фильма" />
@@ -706,69 +725,89 @@
                     mattis molestie a iaculis at. Vel
                     quam elementum pulvinar etiam non quam.
                 </p>
-                <div class="block07__review">
-                    <div class="block07__list">
-                        <div class="block07__item">
-                            <img src="images/16f9e09b5b79546cf30d6f73497c82fc 1.png" alt="Елена Еленова" />
-                            <div class="block07__abs">
-                                <p class="block07__name">
-                                    Елена Еленова
-                                </p>
-                                <p class="block07__descr block07__descr__text1">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <p class="block07__date"> 13.12.2020 </p>
+                <div class="block07__review ">
+                    <div class="owl-carousel owl-theme ">
+                        <div class="block07__list ">
+                            <div class="block07__item">
+                                <img src="images/16f9e09b5b79546cf30d6f73497c82fc 1.png" alt="Елена Еленова" />
+                                <div class="block07__abs">
+                                    <p class="block07__name">
+                                        Елена Еленова
+                                    </p>
+                                    <p class="block07__descr block07__descr__text1">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                    <p class="block07__date"> 13.12.2020 </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="block07__arrow">
-                        <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M0.781067 11.0384L11.3807 0.438721L13.2663 2.32434L4.5523 11.0384L13.2663 19.7524L11.3807 21.638L0.781067 11.0384Z"
-                                fill="#97B13C" />
-                        </svg>
-                    </div>
+                        <!--<div class="block07__arrow">
+                            <svg width="14" height="22" viewBox="0 0 14 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.781067 11.0384L11.3807 0.438721L13.2663 2.32434L4.5523 11.0384L13.2663 19.7524L11.3807 21.638L0.781067 11.0384Z"
+                                    fill="#97B13C" />
+                            </svg>
+                        </div>-->
 
-                    <div class="block07__list">
-                        <div class="block07__item">
-                            <img src="images/загружено 1.png" alt="Борис Борисов" />
-                            <div class="block07__abs">
-                                <p class="block07__name">
-                                    Борис Борисов
-                                </p>
-                                <p class="block07__descr block07__descr__text2">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <p class="block07__date"> 13.12.2020 </p>
+                        <div class="block07__list">
+                            <div class="block07__item ">
+                                <img src="images/загружено 1.png" alt="Борис Борисов" />
+                                <div class="block07__abs">
+                                    <p class="block07__name">
+                                        Борис Борисов
+                                    </p>
+                                    <p class="block07__descr block07__descr__text2">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                    <p class="block07__date"> 13.12.2020 </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="block07__arrow">
-                        <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M13.2191 11.0376L2.61946 0.437988L0.733838 2.32361L9.44788 11.0376L0.733838 19.7517L2.61946 21.6373L13.2191 11.0376Z"
-                                fill="#97B13C" />
-                        </svg>
-                    </div>
-                    <div class="block07__list">
-                        <div class="block07__item">
-                            <img src="images/8d964eb8387ae69436fb8ed448f79d35_ce_5568x3473x0x120_cropped_960x600 1.png"
-                                alt="Леонардо ДиКаприо" />
+                        <!-- <div class="block07__arrow">
+                            <svg width="14" height="22" viewBox="0 0 14 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.2191 11.0376L2.61946 0.437988L0.733838 2.32361L9.44788 11.0376L0.733838 19.7517L2.61946 21.6373L13.2191 11.0376Z"
+                                    fill="#97B13C" />
+                            </svg>
+                        </div>-->
+                        <div class="block07__list">
+                            <div class="block07__item ">
+                                <img src="images/8d964eb8387ae69436fb8ed448f79d35_ce_5568x3473x0x120_cropped_960x600 1.png"
+                                    alt="Леонардо ДиКаприо" />
 
-                            <div class="block07__abs">
-                                <p class="block07__name">
-                                    Леонардо ДиКаприо
-                                </p>
-                                <p class="block07__descr block07__descr__text3">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <p class="block07__date"> 13.12.2020 </p>
+                                <div class="block07__abs">
+                                    <p class="block07__name">
+                                        Леонардо ДиКаприо
+                                    </p>
+                                    <p class="block07__descr block07__descr__text3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                    <p class="block07__date"> 13.12.2020 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block07__list">
+                            <div class="block07__item ">
+                                <img src="images/загружено 1.png" alt="Борис Борисов" />
+                                <div class="block07__abs">
+                                    <p class="block07__name">
+                                        Борис Борисов
+                                    </p>
+                                    <p class="block07__descr block07__descr__text2">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                    <p class="block07__date"> 13.12.2020 </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -776,7 +815,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="block08">
         <!-- <div class="block08__inner"> -->
@@ -850,9 +888,8 @@
     <div class="block09">
         <div class="block09__in">
             <div class="container">
-                <div>
+                <div class="block09__image-wrap">
                     <img src="images/image 2.png" alt="Как добраться" />
-
                 </div>
             </div>
         </div>
@@ -1231,7 +1268,7 @@
         <symbol id="call__ico" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M5.67222 7.98889C4.1 7.18333 2.81111 5.9 2.01111 4.32778L3.12371 3.49804C3.44322 3.25977 3.59072 2.85451 3.49912 2.4666L3.09853 0.770184C2.99196 0.318844 2.58905 0 2.1253 0H0.555556C0.25 0 0 0.25 0 0.555556C0 5.77222 4.22778 10 9.44444 10C9.75 10 10 9.75 10 9.44444V7.87332C10 7.4102 9.68201 7.00767 9.23146 6.90048L7.53545 6.49696C7.14653 6.40442 6.73987 6.55242 6.50139 6.87328L5.67222 7.98889Z"
-                fill="#333333" />
+                fill="currentColor" />
         </symbol>
 
     </svg>
