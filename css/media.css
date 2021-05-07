@@ -256,7 +256,8 @@
     }
 
 
-    .block03__line {
+    .block03__line1,
+    .block03__line2 {
 
         font-size: 0.7rem;
     }
@@ -1105,9 +1106,11 @@
         border-right: 14.8rem solid rgba(163, 204, 64, 0.8);
         top: 0px;
     }
+   
 
     .block07__text1 {
         max-width: 100%;
+        margin: 0rem 0rem 1rem;
     }
 
     .block07__header {
