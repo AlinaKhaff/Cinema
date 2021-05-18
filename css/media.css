@@ -71,6 +71,11 @@
 
         width: 112%;
     }
+
+    .form-wrapper {
+      
+        margin: 0.5rem auto 0;
+    }
 }
 
 @media screen and (max-width:1024px) {
@@ -269,7 +274,7 @@
 
 
     .button1 svg {
-        fill: #a3cc40;
+        color: #a3cc40 !important;
     }
 
     .link-underline {
@@ -409,6 +414,9 @@
         margin-top: -6.0rem;
     }
 
+    .block05__movie1 {
+        width: 50%;
+    }
     .block06__text1 {
 
         max-width: 85%;
@@ -552,7 +560,8 @@
 
     .menu__button {
         display: block;
-        margin-top: -1.5rem;
+        position: relative;
+        top: -1.5rem;
         margin-left: 25rem;
     }
 
@@ -1348,7 +1357,7 @@
         display: block;
         overflow: hidden;
         float: left;
-        width: 50%;
+        width: 75%;
     }
 
     .block05__movie-mobile {
@@ -1532,8 +1541,7 @@
 
     .menu__button {
         margin-left: 21rem;
-        margin-top: -1.5rem;
-        overflow: hidden;
+       
     }
 
     .block01__closed {
@@ -1690,6 +1698,11 @@
         font-size: 4.16vw;
     }
 
+    .block05__movie {
+       
+        width: 100%;
+    }
+
     .block07__header {
         padding-top: 6.5rem;
     }
@@ -1727,7 +1740,7 @@
 
     .menu__button {
         margin-left: 13rem;
-        margin-top: -1.5rem;
+        margin-top: -0.5rem;
     }
 
     .block01__col1 {
