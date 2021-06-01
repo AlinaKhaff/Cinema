@@ -71,3 +71,4 @@ for (let index = 0; index < filmsData.length; index++) {
     div.innerHTML += film.renderFilmTableItem();
   }
 }
+//# sourceMappingURL=film-table.js.map

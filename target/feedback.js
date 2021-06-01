@@ -1,11 +1,11 @@
-const name1Field = document.querySelector('#block08-form input[name="name1"]').parentNode;
-const email1Field = document.querySelector('#block08-form input[name="email1"]').parentNode;
+const name1Field = document.querySelector('#block08-form   input[name="name1"]').parentNode;
+const email1Field = document.querySelector('#block08-form   input[name="email1"]').parentNode;
 const selectPlace = document.getElementById('place-numbers');
-const reviewField = document.querySelector('#block08-form  input[name="review"]').parentNode;
+const reviewField = document.querySelector('#block08-form   input[name="review"]').parentNode;
 const form = document.getElementById('feedback-form');
-const ERROR_CLASS_NAME1 = 'st-input1_error';
-const FOCUCED_CLASS_NAME1 = 'st-input1_focused';
-const SELECT_SELECTED1 = 'input-select-selected';
+const ERROR_CLASS_NAME = 'st-input1_error';
+const FOCUCED_CLASS_NAME = 'st-input1_focused';
+const SELECT_SELECTED = 'input-select-selected';
 
 function initalizeField(field) {
   const input = field.getElementsByTagName('input')[0];
@@ -13,16 +13,16 @@ function initalizeField(field) {
   reset();
 
   function clearError() {
-    field.classList.remove(FOCUCED_CLASS_NAME1);
+    field.classList.remove(FOCUCED_CLASS_NAME);
     fieldError.innerText = '';
   }
 
   input.addEventListener('focus', function () {
-    field.classList.add(FOCUCED_CLASS_NAME1);
+    field.classList.add(FOCUCED_CLASS_NAME);
   });
   input.addEventListener('blur', () => {
     if (!input.value) {
-      field.classList.remove(FOCUCED_CLASS_NAME1);
+      field.classList.remove(FOCUCED_CLASS_NAME);
     }
   });
   input.addEventListener('input', () => {
@@ -31,13 +31,13 @@ function initalizeField(field) {
 
   function reset() {
     input.value = '';
-    field.classList.remove(ERROR_CLASS_NAME1);
+    field.classList.remove(ERROR_CLASS_NAME);
     clearError();
   }
 
   return {
     addError(errorText) {
-      field.classList.add(ERROR_CLASS_NAME1);
+      field.classList.add(ERROR_CLASS_NAME);
       fieldError.innerText = errorText;
     },
 
@@ -81,7 +81,7 @@ function handleSubmit(event) {
   }
 
   if (!reviewValue) {
-    reviewFieldUtils.addError('Необходимо оставить отзыв');
+    reviewFieldUtils.addError('Необходимо указать email');
     return;
   }
 
@@ -89,8 +89,7 @@ function handleSubmit(event) {
   const data = {
     name: name1Value,
     email: email1Value,
-    place: selectPlace.value,
-    review: reviewValue
+    prize: selectPlace.value
   };
   const url = new URL('http://inno-ijl.ru/multystub/stc-21-03/feedback');
   url.search = new URLSearchParams(data).toString();
@@ -102,3 +101,4 @@ function handleSubmit(event) {
 }
 
 form.addEventListener('submit', handleSubmit);
+//# sourceMappingURL=feedback.js.map

@@ -9,3 +9,4 @@ function toHour(num) {
 function toMinuts(num) {
   return String(num).padEnd(2, '0');
 }
+//# sourceMappingURL=utils.js.map

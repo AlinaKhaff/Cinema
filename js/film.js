@@ -1,7 +1,6 @@
 
 class Film{
     constructor(filmData, clazz) {
-        console.log('constructor');
         this.data = filmData;
         this.start = `${toHour(getRandomToMax(14)+9)}:${toMinuts(getRandomToMax(5))}`
         this.id = filmData.id || filmData.title.replaceAll(' ', '-');
