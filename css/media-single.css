@@ -1,0 +1,29 @@
+@media screen and (max-width:768px) {
+    .block01_second {
+        height: 4rem;
+    }
+
+    .single__inner {
+
+        display: block;
+    }
+
+    .single__right {
+
+        padding-top: 1rem;
+    }
+
+    .single__left>img {
+        margin-left: 3rem;
+    }
+}
+@media screen and (max-width:480px){
+    .single__left>img {
+        margin-left: 0.5rem;
+    }
+
+}
+
+.single__left>img {
+    margin-left: 0.5rem;
+}

@@ -1,6 +1,6 @@
 const searchParams = new URLSearchParams(location.search);
 const likes = document.getElementById('sf-likes');
-const stars = document.querySelectorAll('.rating-star');
+const stars = document.querySelectorAll('.rating_star');
 const filmId = searchParams.get('id');
 
 const fetchKinopoiskFilmData = async () => {
@@ -24,7 +24,9 @@ const fetchFilmMeta = async () => {
     body
   } = await answer.json();
   const views = document.getElementById('sf-views');
+  const likes = document.getElementById('sf-likes');
   const ratingNumber = document.getElementById('sf-rating-number');
+  const stars = document.querySelectorAll('rating_star');
   views.textContent = `${body.views} Views`;
   likes.textContent = `${body.likes} Likes`;
   const rating = body.ratings.reduce((a, b) => parsenInt(a) + parseInt(b), 0) / body.ratings.length;

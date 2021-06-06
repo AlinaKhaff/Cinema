@@ -163,6 +163,7 @@ form {
     z-index: 11;
 }
 
+
 /*
 textarea,
 select {
@@ -278,6 +279,14 @@ button {
     border-bottom: 1px solid transparent;
     border-radius: 6px;
 }*/
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
 
 .button1__big {
     width: 100%;
@@ -428,7 +437,7 @@ button:active {
 /** Компоненты */
 
 .block01 {
-    min-height: 100vh;
+   
     background: no-repeat center/cover url("../images/Backgroound\ Picture.jpg") mediumaquamarine;
     position: relative;
     overflow: hidden;
@@ -446,7 +455,7 @@ button:active {
 
 
 .block04 {
-    min-height: 100vh;
+    
     background: no-repeat center/cover url("../images/block04.jpg") transparent;
     position: relative;
     overflow: hidden;
@@ -457,7 +466,7 @@ button:active {
 }
 
 .block07 {
-    min-height: 100vh;
+   
     background: no-repeat center/cover url("../images/block06.jpg") mediumaquamarine;
     position: relative;
     overflow: hidden;
@@ -603,7 +612,7 @@ button:active {
     /* left: -0.7rem;
     bottom: 0; */
     transform: translateY(100%);
-    top: 3rem;
+    top: 2rem;
 
 }
 
@@ -1329,7 +1338,7 @@ height: 331px;
     overflow: hidden;
     float: left;
     /* display: block; */
-    width: 86%;
+    width: 88%;
     padding: 2.5rem 0rem 8.1rem 3.1rem;
     text-align: center;
 }
@@ -1340,7 +1349,7 @@ height: 331px;
 
 .block07__item>img {
 
-    width: 13.3rem;
+    width: 13.0rem;
     height: 9.6rem;
 
 }
@@ -1482,6 +1491,7 @@ height: 331px;
 
 }
 
+
 .block08__abs {
     font-family: IBM Plex Sans;
     font-weight: 500;
@@ -1495,6 +1505,7 @@ height: 331px;
     position: relative;
     border-radius: 0.31rem;
     max-width: 100%;
+    transition: 0.2s;
 
 }
 
@@ -1520,8 +1531,8 @@ height: 331px;
     transition: .2s;
     font-size: 0.75rem;
     color: #a1a1a1;
-    top: 14px;
-    left: 16px;
+    top: 0.87rem;
+    left: 1rem;
 
 }
 
@@ -1547,11 +1558,17 @@ height: 331px;
 
 
 }
+textarea{
+    resize: none;
+    /* margin-top: 0px; */
+    /* margin-bottom: 0px; */
+    height: 6.25rem
+}
 
 
 
 .st-input1_error {
-    box-shadow: 0 0 0 .25rem rgb(220, 60, 16 / 50%);
+    box-shadow: 0 0 0 0.25rem rgb(220 60 16 / 50%);
 }
 
 .st-input1__error-msg {
@@ -1566,7 +1583,7 @@ height: 331px;
 
 .input-select {
     font-size: 0.75rem;
-    margin-bottom: 1.5rem;
+
     color: #a1a1a1;
     padding: 0.6rem 0.75rem;
     border-radius: 0.25rem;
@@ -1576,8 +1593,11 @@ height: 331px;
     -webkit-appearance: none;
     -moz-appearance: none;
     background: url(../images/arrow.svg) no-repeat #dedede;
-    background-position: right center;
     background-origin: 0px;
+    background-position: right;
+    
+
+
 
 }
 
@@ -1626,7 +1646,7 @@ height: 331px;
 
 .input-checkbox+span>svg>path {
     /*color: #a3cc40;*/
-    fill: white;
+    fill: none;
 }
 
 .input-checkbox:checked+span>svg>path {
@@ -1817,10 +1837,10 @@ height: 331px;
 
 }
 
-.block01_second,
+/* .block01_second,
 .block01__header {
     padding-top: 1.75rem;
-}
+} */
 
 .block01_second::after {
     display: none;
@@ -1893,7 +1913,7 @@ height: 331px;
     font-size: 0.68rem;
     line-height: 2.0;
     color: #696969;
-    
+
 
 }
 
@@ -1921,7 +1941,7 @@ height: 331px;
     line-height: 2.0;
 }
 
-.like-icon{
+.like-icon {
     cursor: pointer;
     fill: #687250;
 }
@@ -1991,15 +2011,23 @@ height: 331px;
 }
 
 
+
 .block03_second {
     margin-top: 3rem;
+
 }
 
 .block03_second-img>img {
 
     border-radius: 0.31rem;
     width: 85%;
+
 }
+
+.block03__row {
+    margin-left: 7rem;
+}
+
 
 .block03_second-text1 {
     font-family: IBM Plex Sans;
@@ -2034,8 +2062,12 @@ height: 331px;
     color: #333333;
 }
 
+.block03_second-header {
+    margin-left: 3rem;
+}
+
 .block03__second-text {
-    margin: 2rem 0rem 2rem 2rem;
+    margin: 2rem 0rem 2rem 7rem;
 }
 
 .block03__second-text1 {
@@ -2047,7 +2079,7 @@ height: 331px;
 }
 
 .block03__second-text1 {
-    right: 12rem;
+    right: 22rem;
     margin-top: -2rem;
 }
 
@@ -2056,7 +2088,7 @@ height: 331px;
 }
 
 .dropdown-list-second {
-    top: 4.5rem;
+    top: 1.5rem;
 }
 
 

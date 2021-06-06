@@ -43,12 +43,18 @@
         width: 100%;
         /* Ширина изображений */
     }
-
+    .block07__item {
+        
+        width: 87%;
+    }
     .footer1 {
 
         padding-left: 2.3rem;
     }
-
+    .simple-text1 {
+        
+     padding-right: 0rem;
+    }
     .block10__icon4 {
         position: absolute;
         left: 0.6rem;
@@ -73,7 +79,7 @@
     }
 
     .form-wrapper {
-      
+
         margin: 0.5rem auto 0;
     }
 }
@@ -416,7 +422,9 @@
 
     .block05__movie1 {
         width: 50%;
+        height: 27.56rem;
     }
+
     .block06__text1 {
 
         max-width: 85%;
@@ -470,7 +478,7 @@
     }
 
     .block07__item>img {
-
+        width: 10.4rem;
         height: 7.6rem;
     }
 
@@ -541,7 +549,7 @@
     }
 
     .block01 {
-        height: 17.25rem;
+        height: 20.25rem;
     }
 
     .block01::after {
@@ -715,7 +723,7 @@
     }
 
     .block02__inner {
-        padding-top: 3.8rem;
+        padding-top: 4.8rem;
     }
 
     .block02__header {
@@ -808,11 +816,11 @@
     }
 
     .block04 {
-        height: 26.25rem;
+        height: 32.25rem;
     }
 
     .block04_present-descr {
-        margin-top: -5rem;
+        margin-top: -3rem;
     }
 
     .block04__image-wrap img {
@@ -833,7 +841,7 @@
     .button1__small {
         width: 13rem;
         height: 1.6rem;
-        margin-top: 1.3rem;
+        margin-top: 3.3rem;
     }
 
     .block04__image-wrap {
@@ -849,6 +857,11 @@
         max-width: 100%;
         text-align: left;
         margin-bottom: 2rem;
+    }
+
+    .block05__movie1 {
+       
+        height: 17.56rem;
     }
 
     .block05__text2 {
@@ -913,7 +926,8 @@
 
     .block07 {
 
-        height: 24.6rem;
+        height: 28.6rem;
+
     }
 
     .block07__header {
@@ -945,7 +959,7 @@
     }
 
     .block07__item>img {
-
+        width: 6.6rem;
         height: 4.6rem;
     }
 
@@ -1049,19 +1063,33 @@
     }
 
     .block08__feedback {
-
+        width: 40%;
         margin: 0.25rem 1.5rem 0rem 0rem;
+    }
+
+    /* .input-select{
+        height: 1.5rem;
+    } */
+    .st-input1__input {
+        height: 1.5rem;
+    }
+
+    .st-input1__label {
+        font-size: 0.5rem;
+        top: 0.5rem
+    }
+
+    .input-text {
+        font-size: 0.5rem;
     }
 
     .block08__abs {
 
-        font-size: 1.2rem;
+        font-size: 1.0rem;
     }
 
-    .block08__abs1 {
-
-        font-size: 0.7rem;
-
+    .st-input1__inputreview {
+        height: 4rem;
     }
 
     form {
@@ -1069,7 +1097,7 @@
         width: 11.7rem;
         padding-top: 0.9rem;
 
-        gap: 1.0rem;
+        gap: 0.5rem;
     }
 
     .block08__input1-input1,
@@ -1139,7 +1167,7 @@
 
     }
 
-    .block10__row3 {
+    .block10__row3 a {
         font-size: 0.5rem;
         margin-top: 0rem;
     }
@@ -1147,12 +1175,23 @@
     .footer1 {
 
         font-size: 0.6rem;
-        margin: -1rem -5rem -9rem -1.8rem;
+        margin: -2rem -5rem -9rem -1.8rem;
     }
 
-    .block10__row2 {
+    .block10__row2 a {
 
         font-size: 0.5rem;
+    }
+
+    .block10__row2,
+    .block10__row3 {
+        gap: 0.1rem;
+        padding-top: 0rem;
+    }
+
+    .simple-text1 {
+
+        padding-top: 0rem;
     }
 
     .block10_icon {
@@ -1166,25 +1205,25 @@
     .block10__icon1 {
 
         left: 0.25rem;
-        top: 0.3rem;
+        top: 0.1rem;
     }
 
     .block10__icon2 {
 
         left: 0.2rem;
-        top: 0.2rem;
+        top: 0.1rem;
     }
 
     .block10__icon3 {
 
         left: 0.25rem;
-        top: 0.3rem;
+        top: 0.1rem;
     }
 
     .block10__icon4 {
 
         left: 0.16rem;
-        top: 0.3rem;
+        top: 0.1rem;
     }
 
     .block10__icon5 {
@@ -1192,12 +1231,35 @@
         left: 0.4rem;
         top: 0.2rem;
     }
+
+    .form-wrapper {
+        height: 18rem;
+        max-width: 20.25rem;
+    }
+
+    .popup-form {
+        width: 20rem;
+        padding: 2.8rem 2.2rem 2.2rem;
+    }
+
+
 }
 
 @media screen and (max-width:750px) {
 
     html {
         font-size: 3.5vw;
+    }
+    .block05__movie1 {
+        width: 50%; 
+    }
+
+    .block06__abs::before {
+     
+        top: 1px;
+    }
+    .block07__item>img {
+        width: 8.0rem;
     }
 
     .block07__text1 {
@@ -1214,7 +1276,9 @@
         margin-left: 9rem;
     }
 
-
+    .block06__abs::before {
+        top: 0px;
+    }
 
 
     .owl-theme .owl-nav .owl-prev span {
@@ -1244,25 +1308,40 @@
     html {
         font-size: 3.5vw;
     }
-
+    .block01__row {
+        padding: 2rem 0rem 3rem 0rem;
+    }
     .block01__h1 {
 
         margin-top: -4rem;
     }
 
+    .block02__info {
+      
+        bottom: -0.3rem;
+    }
+
     .block04_present-descr {
-        margin-top: -6rem;
+        margin-top: -3rem;
     }
 
     .block04__image-wrap img {
-        top: -2rem;
+        top: 0rem;
     }
 
     .button1__small {
         width: 11rem;
         height: 1.6rem;
-        margin-top: 0.3rem;
+        margin-top: 1.3rem;
     }
+    .simple-text2 {
+        padding: 0.3rem 0rem 0.5rem 0rem;
+    }
+    .skeleton-film_box{
+       
+            width: 50%;
+    }
+    
 }
 
 @media screen and (max-width:650px) {
@@ -1278,7 +1357,8 @@
     .block02__info {
 
         max-width: 17rem;
-        right: 3.9rem;
+        right: 3.3rem;
+        bottom: 1rem;
     }
 
     .block02__text1 {
@@ -1334,7 +1414,7 @@
 
     .block04_present-descr {
         max-width: 100%;
-        padding-top: 11.6rem;
+        padding-top: 12.6rem;
         margin-top: -15.3rem;
     }
 
@@ -1344,13 +1424,13 @@
 
     .block04__image-wrap img {
         width: 35%;
-        top: -0.5rem;
+        top: 0.5rem;
     }
 
     .button1__small {
         width: 11rem;
         height: 1.8rem;
-        margin-top: 0.3rem;
+        margin-top: 1.3rem;
     }
 
     .block05__movie {
@@ -1368,6 +1448,7 @@
 
     .block05__movie1 {
         width: 100%;
+        height: 26.56rem;
     }
 
     .block05__text2 {
@@ -1443,7 +1524,7 @@
 
     .block10__footer {
         display: grid;
-        gap: 1rem;
+        gap: 0.5rem;
         text-align: center;
         grid-template-columns: 100%;
     }
@@ -1455,9 +1536,7 @@
         padding-right: 0.75rem;
     }
 
-    .block10__row {
-        font-size: 1.0rem;
-    }
+
 
     .simple-text1 {
         text-align: center;
@@ -1471,28 +1550,28 @@
 
     .block10__icon1 {
         left: 0.3rem;
-        top: 0.3rem;
+        top: 0.1rem;
     }
 
     .block10__icon2 {
         left: 0.2rem;
-        top: 0.2rem;
+        top: 0.1rem;
     }
 
     .block10__icon3 {
         left: 0.25rem;
-        top: 0.3rem;
+        top: 0.1rem;
     }
 
     .block10__icon4 {
 
         left: 0.15rem;
-        top: 0.3rem;
+        top: 0.1rem;
     }
 
     .block10__icon5 {
         left: 0.4rem;
-        top: 0.2rem;
+        top: 0.1rem;
 
     }
 
@@ -1504,7 +1583,7 @@
 
     .footer1 {
 
-        margin: -3rem 0rem -3rem -1.8rem;
+        margin: -2rem 0rem -3rem -1.8rem;
         width: 100%;
     }
 }
@@ -1513,24 +1592,54 @@
     html {
         font-size: 3.5vw;
     }
+    .block02__info {
+     
+        bottom: 5rem;
+    }
     .simple-text2 {
         font-size: 0.5rem;
     }
+
     .block04_present-descr {
-       
+
         margin-top: -14.3rem;
     }
+
     .button1__small {
-       
+
         margin-top: 1.3rem;
     }
+
     .block07__header {
         padding-top: 5.5rem;
     }
+
     .block07__text1 {
-      text-align: left;
-      max-width: 100%;
-}
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .popup-form {
+
+        padding: 3.0rem 2.2rem 2.2rem;
+    }
+
+    .form {
+        width: 12.7rem;
+    }
+
+    .block05__movie1 {
+
+        height: 26.56rem;
+    }
+
+    .footer1 {
+        margin: -2.5rem 0rem -3rem -1.8rem;
+    }
+
+    .block08__feedback {
+        width: 43%;
+    }
 }
 
 
@@ -1541,7 +1650,7 @@
 
     .menu__button {
         margin-left: 21rem;
-       
+
     }
 
     .block01__closed {
@@ -1562,9 +1671,12 @@
 
     .block04_present-descr {
         margin-top: -15.3rem;
-        padding-top: 12.6rem;
-    }  
-        
+        padding-top: 13.6rem;
+    }
+
+    .block05__movie1 {
+        height: 21.56rem;
+    }
 
     .simple-text2 {
         font-size: 0.55rem;
@@ -1619,6 +1731,17 @@
         left: 3.0rem !important;
     }
 
+
+    form {
+        width: 12.0rem;
+    }
+
+
+
+    .block08__feedback {
+        width: 50%;
+    }
+
     .footer {
         height: 23.1rem;
     }
@@ -1637,9 +1760,6 @@
         padding-right: 0.75rem;
     }
 
-    .block10__row {
-        font-size: 1.0rem;
-    }
 
     .simple-text1 {
         text-align: center;
@@ -1653,28 +1773,28 @@
 
     .block10__icon1 {
         left: 0.3rem;
-        top: 0.3rem;
+        top: 0.1rem;
     }
 
     .block10__icon2 {
         left: 0.2rem;
-        top: 0.2rem;
+        top: 0.1rem;
     }
 
     .block10__icon3 {
         left: 0.25rem;
-        top: 0.3rem;
+        top: 0.1rem;
     }
 
     .block10__icon4 {
 
         left: 0.15rem;
-        top: 0.3rem;
+        top: 0.1rem;
     }
 
     .block10__icon5 {
         left: 0.4rem;
-        top: 0.2rem;
+        top: 0.1rem;
 
     }
 
@@ -1697,17 +1817,22 @@
     html {
         font-size: 4.16vw;
     }
-
+    .block02__info {
+      
+        bottom: 7rem;
+    }
     .block05__movie {
-       
+
         width: 100%;
     }
 
     .block07__header {
         padding-top: 6.5rem;
     }
+    .button1__small {
+        margin-top: 0.3rem;
+    }
 
-    
 
     .simple-text2 {
         font-size: 0.6rem;
@@ -1719,15 +1844,18 @@
     html {
         font-size: 4.16vw;
     }
-
+    .block02__info {
+        bottom: 10rem;
+    }
     .block04_present-descr {
         padding-top: 13.6rem;
     }
 
     .button1__small {
 
-        margin-top: 2.3rem;
+        margin-top: 0.3rem;
     }
+
 }
 
 
@@ -1762,7 +1890,7 @@
 
     .block02__info {
         right: -0.1rem;
-        bottom: -1.3rem;
+        bottom: 5.7rem;
     }
 
     .block02__plus {
@@ -1797,7 +1925,7 @@
     }
 
     .block04_present-descr {
-        margin-top: -14rem;
+        margin-top: -12rem;
     }
 
 
@@ -1820,6 +1948,7 @@
 
     .block04__image-wrap img {
         width: 45%;
+        top: 1.5rem;
     }
 
     .simple-text2 {
@@ -1872,11 +2001,15 @@
         top: -1rem;
     }
 
-
+    .block05__movie1 {
+        height: 18.56rem;
+    }
 
     .block08__feedback {
         margin: 0.25rem 1.5rem 0rem 0rem;
+        width: 80%;
     }
+
 
     .footer {
         height: 24.1rem;
@@ -1892,7 +2025,7 @@
     }
 
     .footer1 {
-        padding-top: 1rem;
+        padding-top: 2.5rem;
         font-size: 0.4rem;
     }
 
@@ -1903,6 +2036,16 @@
     .block10__col3 {
         gap: 0.4rem;
     }
-
+    .form-wrapper {
+        height: 16rem;
+        max-width: 15.25rem;
+    }
+    .popup-form {
+        padding: 3.3rem 2.2rem 2.2rem;
+        right: 1rem;
+        width: 17rem;
+    }
+  
+       
 
 }

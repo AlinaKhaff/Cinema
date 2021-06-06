@@ -13,19 +13,20 @@
     <link rel="stylesheet" href="./css/media.css">
 
 
-    <link rel="stylesheet" href="libs/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="libs/owl/owl.theme.default.css">
+    <link rel="stylesheet" href="./libs/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/owl/owl.theme.default.css">
 
-    <script defer src="libs/polyfill.min.js"></script>
+    <script defer src="./libs/polyfill.min.js"></script>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script defer src="libs/owl/owl.carousel.min.js"></script>
-    <script defer src="target/utils.js"></script>
-    <script defer src="target/film.js"></script>
-    <script defer src="target/main.js"></script>
-    <script defer src="target/carousel.js"></script>
-    <script defer src="target/film-table.js"></script>
-    <script defer src="target/blocks-films.js"></script>
-    <script defer src="target/prize.js"></script>
+    <script defer src="./libs/owl/owl.carousel.min.js"></script>
+    <script defer src="./target/utils.js"></script>
+    <script defer src="./target/film.js"></script>
+    <script defer src="./target/main.js"></script>
+    <script defer src="./target/carousel.js"></script>
+    <script defer src="./target/film-table.js"></script>
+    <script defer src="./target/blocks-films.js"></script>
+    <script defer src="./target/prize.js"></script>
+    <script defer src="./target/feedback.js"></script>
 
 
 </head>
@@ -524,7 +525,7 @@
                     <div class="skeleton-film-box"></div>
                     <div class="skeleton-film-box"></div>
                     <div class="skeleton-film-box"></div>
-                    
+
                     <div class="skeleton-film-box"></div>
                     <div class="skeleton-film-box"></div>
                     <div class="skeleton-film-box"></div>
@@ -691,8 +692,7 @@
             </div>
         </div>
     </div>
-    </div>
-    </div>
+
 
 
 
@@ -758,7 +758,8 @@
                     sed
                     do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Nibh mauris cursus
-                    mattis molestie a iaculis at. Vel
+                    mattis mol
+                    estie a iaculis at. Vel
                     quam elementum pulvinar etiam non quam.
                 </p>
                 <div class="block07__review ">
@@ -885,15 +886,16 @@
                                 <option value="10">10</option>
                             </select>
                         </div>
-                        <div class="st-input1 st-input1_focused st-input1_error">
-                            <p class="st-input1__label">Напишите свой отзыв</p>
-                            <input type="text" name="review" class="st-input1__input required" value="">
+                        <div class="st-input1 st-input1_focused">
+                            <p class="st-input1__label ">Напишите свой отзыв</p>
+                            <textArea type="text" name="review" class="st-input1__input st-input1__inputreview " value=""></textArea>
                             <p class="st-input1__error-msg">Error message</p>
                         </div>
                         <label class="st-checkbox">
-                            <input type="checkbox" name="input-checkbox" class="input-checkbox">
+                            <input type="checkbox" name="input-checkbox" class="input-checkbox"
+                                onchange="document.getElementById('submit-review-button').disabled = !this.checked;">
                             <span class="st-checkbox__dot">
-                                <svg width="11" height="9" viewBox="0 0 11 9" fill="none"
+                                <svg width="0.68rem" height="0.56rem" viewBox="0 0 11 9" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                         d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
@@ -903,7 +905,7 @@
                             Я согласен на обработку персональных данных
                         </label>
                         <div class="input-wrap">
-                            <button class="button1__big">Отправить</button>
+                            <button id="submit-review-button" class="button1__big" disabled="disabled">Отправить</button>
                         </div>
                     </form>
                 </div>
@@ -1122,14 +1124,14 @@
             <button class="close" id="prize-popup__close">
             </button>
             <form id="prize-form" class="popup-form">
-                <div class="st-input1 st-input1_error">
+                <div class="st-input1 st-input1_focused st-input1_error">
                     <p class="st-input1__label">Введите имя</p>
-                    <input type="text" name="name" class="st-input1__input required" value="John">
+                    <input type="text" name="name" class="st-input1__input" value="John">
                     <p class="st-input1__error-msg">Error message</p>
                 </div>
-                <div class="st-input1 st-input1_error">
+                <div class="st-input1 st-input1_focused st-input1_error">
                     <p class="st-input1__label">Введите email</p>
-                    <input type="text" name="email" class="st-input1__input required" value="John">
+                    <input type="text" name="email" class="st-input1__input" value="John">
                     <p class="st-input1__error-msg">Error message</p>
                 </div>
                 <div class="input-wrap">
@@ -1141,9 +1143,10 @@
                     </select>
                 </div>
                 <label class="st-checkbox">
-                    <input type="checkbox" name="input-checkbox" class="input-checkbox">
+                    <input type="checkbox" name="input-checkbox" class="input-checkbox"
+                        onchange="document.getElementById('submit-prize-button').disabled = !this.checked;">
                     <span class="st-checkbox__dot">
-                        <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="0.68rem" height="0.56rem" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
                                 fill="#A3CC40" />
@@ -1151,7 +1154,7 @@
                     Я согласен на обработку персональных данных
                 </label>
                 <div class="input-wrap">
-                    <button class="button1__big">Отправить</button>
+                    <button id="submit-prize-button" class="button1__big" disabled="disabled">Отправить</button>
                 </div>
             </form>
         </div>

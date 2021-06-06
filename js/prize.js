@@ -19,11 +19,32 @@ function initalizeField(field) {
     const input = field.getElementsByTagName('input')[0];
     const fieldError = field.querySelector('.st-input1__error-msg');
 
-  reset();
-  
+    reset();
+
+    input.value = '';
+    field.classList.remove(ERROR_CLASS_NAME);
+    field.classList.remove(FOCUCED_CLASS_NAME);
+    fieldError.innerText = '';
+
+
+    // input.onfocus = function () {
+    //     field.classList.add(FOCUCED_CLASS_NAME);
+    // }
+
+    // input.onblur = () => {
+    //     if (!input.value) {
+    //         field.classList.remove(FOCUCED_CLASS_NAME);
+    //     }
+    // }
+
+    // return {
+    //     getValue() {
+    //         return input.value
+    //     }
+    // }
 
     function clearError() {
-        field.classList.remove(FOCUCED_CLASS_NAME);
+        field.classList.remove(ERROR_CLASS_NAME);
         fieldError.innerText = '';
     }
 
@@ -37,13 +58,14 @@ function initalizeField(field) {
             field.classList.remove(FOCUCED_CLASS_NAME);
         }
     })
-    input.addEventListener('input', ()=> {
+    input.addEventListener('input', () => {
         clearError();
     })
 
-    function reset () {
+    function reset() {
         input.value = '';
         field.classList.remove(ERROR_CLASS_NAME);
+        field.classList.remove(FOCUCED_CLASS_NAME);
         clearError();
     }
 
@@ -58,64 +80,63 @@ function initalizeField(field) {
         focus() {
             input.focus()
         },
-        reset:reset
+        reset: reset
 
     }
 }
 
 
-    initalizeField(nameField);
-    initalizeField(emailField);
-
-    openBtn.addEventListener('click', () => {
-        popupTooggle();
-        nameFieldUtils.focus();
-    });
-    selectPrize.addEventListener('change', () => {
-        selectPrize.classList.add('input-select-selected');
-    })
-    closeBtn.onclick = popupTooggle;
-
-    function handleSubmit(event) {
-        const nameValue = nameFieldUtils.getValue();
-        const emailValue = emailFieldutils.getValue();
+const nameFieldUtils = initalizeField(nameField);
+const emailFieldUtils = initalizeField(emailField);
 
 
-        if (!nameValue) {
-            nameFieldUtils.addError('Необходимо указать имя');
-            return;
+openBtn.addEventListener('click', () => {
+    popupTooggle();
+    nameFieldUtils.focus();
+});
+selectPrize.addEventListener('change', () => {
+    selectPrize.classList.add('input-select-selected');
+})
+closeBtn.onclick = popupTooggle;
 
-        }
-        if (!emailValue) {
-            emailFieldUtils.addError('Необходимо указать email');
-            return;
-
-        }
-        if (selectPrize.value === 'none') {
-            selectPrize.classList.add('ERROR_CLASS_NAME');
-            return;
-
-        }
-        event.preventDefault();
+function handleSubmit(event) {
+    event.preventDefault();
+    const nameValue = nameFieldUtils.getValue();
+    const emailValue = emailFieldUtils.getValue();
 
 
-        const data = {
-            name: nameValue,
-            email: emailValue,
-            prize: selectPrize.value
-        };
+    if (!nameValue) {
+        nameFieldUtils.addError('Необходимо указать имя');
+        return;
 
-        const url = new URL('http://inno-ijl.ru/multystub/stc-21-03/feedback');
-        url.search = new URLSearchParams(data).toString();
+    }
+    if (!emailValue) {
+        emailFieldUtils.addError('Необходимо указать email');
+        return;
+    }
+    if (selectPrize.value === 'none') {
+        selectPrize.classList.add(ERROR_CLASS_NAME);
+        return;
+    } 
+    const data = {
+        name: nameValue,
+        email: emailValue,
+        prize: selectPrize.value
+    };
 
-        fetch(url.toString())
-        .then(data=> data.json())
-        .then((data)=> {
+    const url = new URL('http://inno-ijl.ru/multystub/stc-21-03/feedback');
+    url.search = new URLSearchParams(data).toString();
+
+    fetch(url.toString())
+        .then(data => data.json())
+        .then((data) => {
             popupTooggle();
             nameFieldUtils.reset();
             emailFieldUtils.reset();
+            selectPrize.value = 'none';
+            selectPrize.classList.remove(SELECT_SELECTED);
         });
 
-    }
+}
 
-    form.addEventListener('submit', handleSubmit);
+form.addEventListener('submit', handleSubmit);

@@ -10,8 +10,16 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/media-single.css">
+
+    <link rel="stylesheet" href="../libs/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="../libs/owl/owl.theme.default.css">
+
+
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="../libs/owl/owl.carousel.min.js"></script>
     <script defer src="../libs/polyfill.min.js"></script>
+    <script defer src="../target/movie-carousel.js"></script>
     <script defer src="../target/utils.js"></script>
     <script defer src="../target/blocks-films.js"></script>
     <script defer src="../target/single-film.js"></script>
@@ -174,38 +182,38 @@
         <div class="container container__wide">
             <div class="single__inner">
                 <div class="single__left">
-                    <img id="sf-poster" src="../images/18042054-942003 1.png">
+                    <img id="sf-poster" src="https://via.placeholder.com/444x511?text=Pic-444x511" alt="">
                 </div>
                 <div class="single__right">
                     <h1 class="single__header" id="sf-header">
-                        Живое
+                        Загрузка...
                     </h1>
                     <div class="rating">
-                        <svg data-value="1" class="rating-star star-selected" id="rating_star" width="1rem"
+                        <svg data-value="1" class="rating-star " id="rating_star" width="1rem"
                             height="1rem" viewBox="0 0 16 16" fill="" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M7.9925 0.5C3.8525 0.5 0.5 3.86 0.5 8C0.5 12.14 3.8525 15.5 7.9925 15.5C12.14 15.5 15.5 12.14 15.5 8C15.5 3.86 12.14 0.5 7.9925 0.5ZM11.1725 12.5L8 10.5875L4.8275 12.5L5.6675 8.8925L2.87 6.47L6.56 6.155L8 2.75L9.44 6.1475L13.13 6.4625L10.3325 8.885L11.1725 12.5Z"
                                 fill="#currentColor" />
                         </svg>
-                        <svg data-value="2" class="rating-star star-selected" id="rating_star" width="1rem"
+                        <svg data-value="2" class="rating-star" id="rating_star" width="1rem"
                             height="1rem" viewBox="0 0 16 16" fill="" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M7.9925 0.5C3.8525 0.5 0.5 3.86 0.5 8C0.5 12.14 3.8525 15.5 7.9925 15.5C12.14 15.5 15.5 12.14 15.5 8C15.5 3.86 12.14 0.5 7.9925 0.5ZM11.1725 12.5L8 10.5875L4.8275 12.5L5.6675 8.8925L2.87 6.47L6.56 6.155L8 2.75L9.44 6.1475L13.13 6.4625L10.3325 8.885L11.1725 12.5Z"
                                 fill="#currentColor" />
                         </svg>
-                        <svg data-value="3" class="rating-star star-selected" id="rating_star" width="1rem"
+                        <svg data-value="3" class="rating-star " id="rating_star" width="1rem"
                             height="1rem" viewBox="0 0 16 16" fill="" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M7.9925 0.5C3.8525 0.5 0.5 3.86 0.5 8C0.5 12.14 3.8525 15.5 7.9925 15.5C12.14 15.5 15.5 12.14 15.5 8C15.5 3.86 12.14 0.5 7.9925 0.5ZM11.1725 12.5L8 10.5875L4.8275 12.5L5.6675 8.8925L2.87 6.47L6.56 6.155L8 2.75L9.44 6.1475L13.13 6.4625L10.3325 8.885L11.1725 12.5Z"
                                 fill="#currentColor" />
                         </svg>
-                        <svg data-value="4" class="rating-star star-selected" id="rating_star" width="1rem"
+                        <svg data-value="4" class="rating-star" id="rating_star" width="1rem"
                             height="1rem" viewBox="0 0 16 16" fill="" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M7.9925 0.5C3.8525 0.5 0.5 3.86 0.5 8C0.5 12.14 3.8525 15.5 7.9925 15.5C12.14 15.5 15.5 12.14 15.5 8C15.5 3.86 12.14 0.5 7.9925 0.5ZM11.1725 12.5L8 10.5875L4.8275 12.5L5.6675 8.8925L2.87 6.47L6.56 6.155L8 2.75L9.44 6.1475L13.13 6.4625L10.3325 8.885L11.1725 12.5Z"
                                 fill="#currentColor" />
                         </svg>
-                        <svg data-value="5" class="rating-star star-selected" id="rating_star" width="1rem"
+                        <svg data-value="5" class="rating-star" id="rating_star" width="1rem"
                             height="1rem" viewBox="0 0 16 16" fill="" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M7.9925 0.5C3.8525 0.5 0.5 3.86 0.5 8C0.5 12.14 3.8525 15.5 7.9925 15.5C12.14 15.5 15.5 12.14 15.5 8C15.5 3.86 12.14 0.5 7.9925 0.5ZM11.1725 12.5L8 10.5875L4.8275 12.5L5.6675 8.8925L2.87 6.47L6.56 6.155L8 2.75L9.44 6.1475L13.13 6.4625L10.3325 8.885L11.1725 12.5Z"
@@ -239,8 +247,8 @@
                                 d="M5 9.675L4.275 9.015C1.7 6.68 0 5.14 0 3.25C0 1.71 1.21 0.5 2.75 0.5C3.62 0.5 4.455 0.905 5 1.545C5.545 0.905 6.38 0.5 7.25 0.5C8.79 0.5 10 1.71 10 3.25C10 5.14 8.3 6.68 5.725 9.02L5 9.675Z"
                                 fill="" />
                         </svg>
-                      
-                        <p class="single__bold" id="sf-likes"> 200 Likes</p>
+
+                        <p class="single__bold" id="sf-likes"> 0 Likes</p>
                     </div>
                     <p class="single-text" id="sf-description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -299,128 +307,112 @@
                 <p class="block03__second-text">Экшн</p>
                 <p class="block03__second-text1">1/30</p>
             </div>
-            <div class="block03__row">
-                <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 0.715152L4.24164 0L0 4L4.24164 8L5 7.28485L1.51671 4L5 0.715152Z" fill="#A3CC40" />
-                </svg>
-                <div class="block03__row1">
-
-                    <div class="block03_second-img">
-                        <img src="../images/ice1.jpg" alt="Фильм Лед" />
+            <div class="owl-carousel owl-theme ">
+                <div class="block03__row" id="block03__movie-carousel">
+                    <div class="block03__row1">
+                        <div class="block03_second-img">
+                            <img src="https://via.placeholder.com/126x146?text=Pic-146x146" alt="" />
+                        </div>
+                        <p class="block03_second-text1">Лёд</p>
+                        <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
+                    </div>                         
+                    <div class="block03__row1">
+                        <div class="block03_second-img">
+                            <img src="https://via.placeholder.com/126x146?text=Pic-146x146" alt="" />
+                        </div>
+                        <p class="block03_second-text1">Лёд</p>
+                        <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
                     </div>
-                    <p class="block03_second-text1">Лёд</p>
-                    <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
-                </div>
 
-                <div class="block03__row1">
-                    <div class="block03_second-img">
-                        <img src="../images/ice1.jpg" alt="Фильм Лед" />
+                    <div class="block03__row1">
+                        <div class="block03_second-img">
+                            <img src="https://via.placeholder.com/126x146?text=Pic-146x146" alt="" />
+                        </div>
+                        <p class="block03_second-text1">Лёд</p>
+                        <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
                     </div>
-                    <p class="block03_second-text1">Лёд</p>
-                    <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
-                </div>
 
-                <div class="block03__row1">
-                    <div class="block03_second-img">
-                        <img src="../images/ice1.jpg" alt="Фильм Лед" />
+                    <div class="block03__row1">
+                        <div class="block03_second-img">
+                            <img src="https://via.placeholder.com/126x146?text=Pic-146x146" alt="" />
+                        </div>
+                        <p class="block03_second-text1">Лёд</p>
+                        <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
                     </div>
-                    <p class="block03_second-text1">Лёд</p>
-                    <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
-                </div>
-
-                <div class="block03__row1">
-                    <div class="block03_second-img">
-                        <img src="../images/ice1.jpg" alt="Фильм Лед" />
+                    <div class="block03__row1">
+                        <div class="block03_second-img">
+                            <img src="https://via.placeholder.com/126x146?text=Pic-146x146" alt="" />
+                        </div>
+                        <p class="block03_second-text1">Лёд</p>
+                        <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
                     </div>
-                    <p class="block03_second-text1">Лёд</p>
-                    <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
-                </div>
-
-                <div class="block03__row1">
-                    <div class="block03_second-img">
-                        <img src="../images/ice1.jpg" alt="Фильм Лед" />
+                    <div class="block03__row1">
+                        <div class="block03_second-img">
+                            <img src="https://via.placeholder.com/126x146?text=Pic-146x146" alt="" />
+                        </div>
+                        <p class="block03_second-text1">Лёд</p>
+                        <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
                     </div>
-                    <p class="block03_second-text1">Лёд</p>
-                    <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
                 </div>
-
-                <div class="block03__row1">
-                    <div class="block03_second-img">
-                        <img src="../images/ice1.jpg" alt="Фильм Лед" />
-                    </div>
-                    <p class="block03_second-text1">Лёд</p>
-                    <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
-                </div>
-                <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0.307768 8.17974L1.12446 8.90723L5.69238 4.83825L1.12446 0.769268L0.307768 1.49675L4.059 4.83825L0.307768 8.17974Z"
-                        fill="white" />
-                </svg>
-
             </div>
 
             <div class="block03__secondinner">
                 <p class="block03__second-text">Драма</p>
             </div>
-            <div class="block03__row">
-                <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 0.715152L4.24164 0L0 4L4.24164 8L5 7.28485L1.51671 4L5 0.715152Z" fill="#A3CC40" />
-                </svg>
-                <div class="block03__row2">
-                    <div class="block03_second-img">
-                        <img src="../images/ice1.jpg" alt="Фильм Лед" />
-                    </div>
-                    <p class="block03_second-text1">Лёд</p>
-                    <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
-                </div>
+            <div class="owl-carousel owl-theme ">
+                <div class="block03__row">
 
-                <div class="block03__row2">
-                    <div class="block03_second-img">
-                        <img src="../images/ice1.jpg" alt="Фильм Лед" />
+                    <div class="block03__row2">
+                        <div class="block03_second-img">
+                            <img src="https://via.placeholder.com/126x146?text=Pic-146x146" alt="" />
+                        </div>
+                        <p class="block03_second-text1">Лёд</p>
+                        <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
                     </div>
-                    <p class="block03_second-text1">Лёд</p>
-                    <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
-                </div>
 
-                <div class="block03__row2">
-                    <div class="block03_second-img">
-                        <img src="../images/ice1.jpg" alt="Фильм Лед" />
+                    <div class="block03__row2">
+                        <div class="block03_second-img">
+                            <img src="https://via.placeholder.com/126x146?text=Pic-146x146" alt="" />
+                        </div>
+                        <p class="block03_second-text1">Лёд</p>
+                        <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
                     </div>
-                    <p class="block03_second-text1">Лёд</p>
-                    <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
-                </div>
 
-                <div class="block03__row2">
-                    <div class="block03_second-img">
-                        <img src="../images/ice1.jpg" alt="Фильм Лед" />
+                    <div class="block03__row2">
+                        <div class="block03_second-img">
+                            <img src="https://via.placeholder.com/126x146?text=Pic-146x146" alt="" />
+                        </div>
+                        <p class="block03_second-text1">Лёд</p>
+                        <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
                     </div>
-                    <p class="block03_second-text1">Лёд</p>
-                    <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
-                </div>
 
-                <div class="block03__row2">
-                    <div class="block03_second-img">
-                        <img src="../images/ice1.jpg" alt="Фильм Лед" />
+                    <div class="block03__row2">
+                        <div class="block03_second-img">
+                            <img src="https://via.placeholder.com/126x146?text=Pic-146x146" alt="" />
+                        </div>
+                        <p class="block03_second-text1">Лёд</p>
+                        <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
                     </div>
-                    <p class="block03_second-text1">Лёд</p>
-                    <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
-                </div>
 
-                <div class="block03__row2">
-                    <div class="block03_second-img">
-                        <img src="../images/ice1.jpg" alt="Фильм Лед" />
+                    <div class="block03__row2">
+                        <div class="block03_second-img">
+                            <img src="https://via.placeholder.com/126x146?text=Pic-146x146" alt="" />
+                        </div>
+                        <p class="block03_second-text1">Лёд</p>
+                        <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
                     </div>
-                    <p class="block03_second-text1">Лёд</p>
-                    <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
-                </div>
-                <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M0.307768 8.17974L1.12446 8.90723L5.69238 4.83825L1.12446 0.769268L0.307768 1.49675L4.059 4.83825L0.307768 8.17974Z"
-                        fill="white" />
-                </svg>
 
+                    <div class="block03__row2">
+                        <div class="block03_second-img">
+                            <img src="https://via.placeholder.com/126x146?text=Pic-146x146" alt="" />
+                        </div>
+                        <p class="block03_second-text1">Лёд</p>
+                        <p class="block03_second-text2"> 2018, фильм Ивана Иванова</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
 
 

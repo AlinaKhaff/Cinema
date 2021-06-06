@@ -1,6 +1,6 @@
 const searchParams = new URLSearchParams(location.search);
 const likes = document.getElementById('sf-likes');
-const stars = document.querySelectorAll('.rating-star');
+const stars = document.querySelectorAll('.rating_star');
 
 const filmId = searchParams.get('id');
 
@@ -26,8 +26,9 @@ const fetchFilmMeta = async () => {
     } = await answer.json();
 
     const views = document.getElementById('sf-views');
-
+    const likes = document.getElementById('sf-likes');
     const ratingNumber = document.getElementById('sf-rating-number');
+    const stars = document.querySelectorAll('rating_star')
 
     views.textContent = `${body.views} Views`;
     likes.textContent = `${body.likes} Likes`;
@@ -44,7 +45,7 @@ const fetchFilmMeta = async () => {
     for (let i = 0; i < stars.length; i++) {
         if (i >= intRating) break;
 
-        const star = stars[i]
+        const star = stars[i];
         star.classList.add('star-selected')
     }
 }

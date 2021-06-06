@@ -1,69 +1,75 @@
 const name1Field = document.querySelector('#block08-form   input[name="name1"]').parentNode;
 const email1Field = document.querySelector('#block08-form   input[name="email1"]').parentNode;
 const selectPlace = document.getElementById('place-numbers');
-const reviewField = document.querySelector('#block08-form   input[name="review"]').parentNode;
-const form = document.getElementById('feedback-form');
-const ERROR_CLASS_NAME = 'st-input1_error';
-const FOCUCED_CLASS_NAME = 'st-input1_focused';
-const SELECT_SELECTED = 'input-select-selected';
+const reviewField = document.querySelector('#block08-form   textArea[name="review"]').parentNode;
+const form1 = document.getElementById('feedback-form');
+const ERROR_CLASS_NAME1 = 'st-input1_error';
+const FOCUCED_CLASS_NAME1 = 'st-input1_focused';
+const SELECT_SELECTED1 = 'input-select-selected';
 
 function initalizeField(field) {
-  const input = field.getElementsByTagName('input')[0];
-  const fieldError = field.querySelector('.st-input1__error-msg');
+  const input1 = field.getElementsByTagName('input')[0] ? field.getElementsByTagName('input')[0] : field.getElementsByTagName('textArea')[0];
+  const fieldError1 = field.querySelector('.st-input1__error-msg');
   reset();
+  input1.value = '';
+  field.classList.remove(ERROR_CLASS_NAME1);
+  field.classList.remove(FOCUCED_CLASS_NAME1);
+  fieldError1.innerText = '';
 
   function clearError() {
-    field.classList.remove(FOCUCED_CLASS_NAME);
-    fieldError.innerText = '';
+    field.classList.remove(ERROR_CLASS_NAME1);
+    fieldError1.innerText = '';
   }
 
-  input.addEventListener('focus', function () {
-    field.classList.add(FOCUCED_CLASS_NAME);
+  input1.addEventListener('focus', function () {
+    field.classList.add(FOCUCED_CLASS_NAME1);
   });
-  input.addEventListener('blur', () => {
-    if (!input.value) {
-      field.classList.remove(FOCUCED_CLASS_NAME);
+  input1.addEventListener('blur', () => {
+    if (!input1.value) {
+      field.classList.remove(FOCUCED_CLASS_NAME1);
     }
   });
-  input.addEventListener('input', () => {
+  input1.addEventListener('input', () => {
     clearError();
   });
 
   function reset() {
-    input.value = '';
-    field.classList.remove(ERROR_CLASS_NAME);
+    input1.value = '';
+    field.classList.remove(ERROR_CLASS_NAME1);
+    field.classList.remove(FOCUCED_CLASS_NAME1);
     clearError();
   }
 
   return {
     addError(errorText) {
-      field.classList.add(ERROR_CLASS_NAME);
-      fieldError.innerText = errorText;
+      field.classList.add(ERROR_CLASS_NAME1);
+      fieldError1.innerText = errorText;
     },
 
     getValue() {
-      return input.value;
+      return input1.value;
     },
 
     focus() {
-      input.focus();
+      input1.focus();
     },
 
     reset: reset
   };
 }
 
-initalizeField(name1Field);
-initalizeField(email1Field);
-initalizeField(reviewField);
+const name1FieldUtils = initalizeField(name1Field);
+const email1FieldUtils = initalizeField(email1Field);
+const reviewFieldUtils = initalizeField(reviewField);
 selectPlace.addEventListener('change', () => {
   selectPlace.classList.add('input-select-selected');
 });
 
 function handleSubmit(event) {
+  event.preventDefault();
   const name1Value = name1FieldUtils.getValue();
-  const email1Value = email1Fieldutils.getValue();
-  const reviewValue = reviewFieldutils.getValue();
+  const email1Value = email1FieldUtils.getValue();
+  const reviewValue = reviewFieldUtils.getValue();
 
   if (!name1Value) {
     name1FieldUtils.addError('Необходимо указать имя');
@@ -76,20 +82,19 @@ function handleSubmit(event) {
   }
 
   if (selectPlace.value === 'none') {
-    selectPlace.classList.add('ERROR_CLASS_NAME');
+    selectPlace.classList.add(ERROR_CLASS_NAME1);
     return;
   }
 
   if (!reviewValue) {
-    reviewFieldUtils.addError('Необходимо указать email');
+    reviewFieldUtils.addError('Необходимо добавить отзыв');
     return;
   }
 
-  event.preventDefault();
   const data = {
     name: name1Value,
     email: email1Value,
-    prize: selectPlace.value
+    select: selectPlace.value
   };
   const url = new URL('http://inno-ijl.ru/multystub/stc-21-03/feedback');
   url.search = new URLSearchParams(data).toString();
@@ -97,8 +102,10 @@ function handleSubmit(event) {
     name1FieldUtils.reset();
     email1FieldUtils.reset();
     reviewFieldUtils.reset();
+    selectPlace.value = 'none';
+    selectPlace.classList.remove(SELECT_SELECTED);
   });
 }
 
-form.addEventListener('submit', handleSubmit);
+form1.addEventListener('submit', handleSubmit);
 //# sourceMappingURL=feedback.js.map
