@@ -17,14 +17,9 @@
     }
 
     .block02__info {
-        position: absolute;
-        background: #FFFFFF;
-        box-shadow: 0px 1.5rem 0.8rem rgb(163 204 64 / 18%);
-        border-radius: 0.7rem;
-        padding: 2.7rem 2.9rem;
-        max-width: 27.3rem;
+
         right: 3.9rem;
-        bottom: -19.3rem;
+        bottom: -12.3rem;
     }
 
     .block02__image-wrap>img {
@@ -43,18 +38,22 @@
         width: 100%;
         /* Ширина изображений */
     }
+
     .block07__item {
-        
+
         width: 87%;
     }
+
     .footer1 {
 
         padding-left: 2.3rem;
     }
+
     .simple-text1 {
-        
-     padding-right: 0rem;
+
+        padding-right: 0rem;
     }
+
     .block10__icon4 {
         position: absolute;
         left: 0.6rem;
@@ -113,14 +112,9 @@
     }
 
     .block02__info {
-        position: absolute;
-        background: #FFFFFF;
-        box-shadow: 0px 1.5rem 0.8rem rgb(163 204 64 / 18%);
-        border-radius: 0.7rem;
-        padding: 2.7rem 2.9rem;
-        max-width: 27.3rem;
-        right: 1.9rem;
-        bottom: -17.3rem;
+
+        /* right: 1.9rem; */
+        bottom: -12.3rem;
     }
 
 
@@ -147,28 +141,23 @@
 }
 
 
-/* @media screen and (max-width:950px) {
-
-        html {
-            font-size: 2.1vw;
-        }
-
-        .block01__lang-dropdown {
-            margin-right: -2rem;
-        }
-
-        .block02__info {
-
-            bottom: -11.3rem;
-        }
-
-        .block10_icon {
-
-            margin-right: 1.4rem;
-        }
+@media screen and (max-width:950px) {
 
 
-*/
+    .block02__info {
+        bottom: -6.3rem;
+    }
+
+    .block10__col1 {
+
+        padding-left: 3rem;
+    }
+
+}
+
+
+
+
 
 @media screen and (max-width:850px) {
 
@@ -214,6 +203,15 @@
         bottom: 0;
         z-index: 1000;
         transition: .2s;
+    }
+
+    .dropdown-list a {
+        color: #A3CC40;
+        top: -1rem;
+    }
+
+    .dropdown-list {
+        top: -1rem;
     }
 
     .block01__phone-call {
@@ -375,7 +373,7 @@
 
     .block01__h1 {
 
-        font-size: 3.9rem;
+        font-size: 3.8rem;
     }
 
     .block01__h2 {
@@ -393,7 +391,7 @@
     }
 
     .block02__info {
-
+        bottom: -14.3rem;
         right: 5.9rem;
     }
 
@@ -789,7 +787,7 @@
         padding: 1rem 1.0rem 0rem;
         max-width: 14.0rem;
         right: 5.9rem;
-        bottom: -2.3rem;
+        bottom: 1.3rem;
     }
 
     .block03__table-wrap {
@@ -860,7 +858,7 @@
     }
 
     .block05__movie1 {
-       
+
         height: 17.56rem;
     }
 
@@ -1250,14 +1248,16 @@
     html {
         font-size: 3.5vw;
     }
+
     .block05__movie1 {
-        width: 50%; 
+        width: 50%;
     }
 
     .block06__abs::before {
-     
+
         top: 1px;
     }
+
     .block07__item>img {
         width: 8.0rem;
     }
@@ -1308,17 +1308,19 @@
     html {
         font-size: 3.5vw;
     }
+
     .block01__row {
         padding: 2rem 0rem 3rem 0rem;
     }
-    .block01__h1 {
 
+    .block01__h1 {
+        font-size: 2.4rem;
         margin-top: -4rem;
     }
 
     .block02__info {
-      
-        bottom: -0.3rem;
+
+        bottom: 3.7rem;
     }
 
     .block04_present-descr {
@@ -1334,14 +1336,16 @@
         height: 1.6rem;
         margin-top: 1.3rem;
     }
+
     .simple-text2 {
         padding: 0.3rem 0rem 0.5rem 0rem;
     }
-    .skeleton-film_box{
-       
-            width: 50%;
+
+    .skeleton-film_box {
+
+        width: 50%;
     }
-    
+
 }
 
 @media screen and (max-width:650px) {
@@ -1350,7 +1354,7 @@
     }
 
     .block01__h1 {
-
+        font-size: 2.4rem;
         margin-top: -4rem;
     }
 
@@ -1358,7 +1362,7 @@
 
         max-width: 17rem;
         right: 3.3rem;
-        bottom: 1rem;
+        bottom: 4rem;
     }
 
     .block02__text1 {
@@ -1592,10 +1596,16 @@
     html {
         font-size: 3.5vw;
     }
-    .block02__info {
-     
-        bottom: 5rem;
+
+    .block02__inner {
+        padding-top: 6.8rem;
     }
+
+    .block02__info {
+
+        bottom: 10rem;
+    }
+
     .simple-text2 {
         font-size: 0.5rem;
     }
@@ -1817,10 +1827,12 @@
     html {
         font-size: 4.16vw;
     }
+
     .block02__info {
-      
-        bottom: 7rem;
+
+        bottom: 13rem;
     }
+
     .block05__movie {
 
         width: 100%;
@@ -1829,6 +1841,7 @@
     .block07__header {
         padding-top: 6.5rem;
     }
+
     .button1__small {
         margin-top: 0.3rem;
     }
@@ -1844,9 +1857,11 @@
     html {
         font-size: 4.16vw;
     }
+
     .block02__info {
-        bottom: 10rem;
+        bottom: 15rem;
     }
+
     .block04_present-descr {
         padding-top: 13.6rem;
     }
@@ -1890,7 +1905,7 @@
 
     .block02__info {
         right: -0.1rem;
-        bottom: 5.7rem;
+        bottom: 9.7rem;
     }
 
     .block02__plus {
@@ -2036,16 +2051,18 @@
     .block10__col3 {
         gap: 0.4rem;
     }
+
     .form-wrapper {
         height: 16rem;
         max-width: 15.25rem;
     }
+
     .popup-form {
         padding: 3.3rem 2.2rem 2.2rem;
         right: 1rem;
         width: 17rem;
     }
-  
-       
+
+
 
 }
