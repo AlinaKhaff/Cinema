@@ -1951,7 +1951,7 @@ textarea{
 }
 
 .like-icon--liked {
-    color: #A3CC40;
+    fill: #A3CC40;
 }
 
 .rating {
@@ -1963,24 +1963,26 @@ textarea{
 .rating {
     color: #687250;
 }
+.star-selected {
+    color: #A3CC40
+}
+
 
 .rating:hover {
     color: #A3CC40;
+}
+.rating-star:hover~.rating-star {
+    color: #687250;
 }
 
 .rating-star {
     cursor: pointer;
 }
 
-.star-selected {
-    color: #A3CC40
-}
 
 
 
-.rating-star:hover~.rating-star {
-    color: #687250;
-}
+
 
 .rating svg {
     padding-right: 0.15rem;

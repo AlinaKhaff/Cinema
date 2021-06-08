@@ -1,6 +1,6 @@
 const searchParams = new URLSearchParams(location.search);
 const likes = document.getElementById('sf-likes');
-const stars = document.querySelectorAll('.rating_star');
+const stars = document.querySelectorAll('.rating-star');
 const filmId = searchParams.get('id');
 
 const fetchKinopoiskFilmData = async () => {
@@ -26,16 +26,16 @@ const fetchFilmMeta = async () => {
   const views = document.getElementById('sf-views');
   const likes = document.getElementById('sf-likes');
   const ratingNumber = document.getElementById('sf-rating-number');
-  const stars = document.querySelectorAll('rating_star');
+  const stars = document.querySelectorAll('.rating-star');
   views.textContent = `${body.views} Views`;
   likes.textContent = `${body.likes} Likes`;
-  const rating = body.ratings.reduce((a, b) => parsenInt(a) + parseInt(b), 0) / body.ratings.length;
+  const rating = body.ratings.reduce((a, b) => parseInt(a) + parseInt(b), 0) / body.ratings.length;
   const intRating = Math.round(rating);
 
   if (isNaN(intRating)) {
     ratingNumber.textContent = '0.0';
   } else {
-    raitingNumber.textContent = Math.floor(rating * 10) / 10;
+    ratingNumber.textContent = Math.floor(rating * 10) / 10;
   }
 
   for (let i = 0; i < stars.length; i++) {
@@ -54,8 +54,6 @@ if (liked !== null) {
 }
 
 likeIcon.addEventListener('click', () => {
-  console.log('like');
-
   if (!likeIcon.classList.contains('like-icon--liked')) {
     localStorage.setItem(FILM_KEY, true);
     const likeCount = parseInt(likes.textContent, 10) + 1;
@@ -85,7 +83,7 @@ likeIcon.addEventListener('click', () => {
 // };
 
 $('.stars-wrapper').on('click', '.rating-star', async function () {
-  console.log('click');
+  console.log('stars');
   await fetch(`http://inno-ijl.ru/multystub/stc-21-03/film/${filmId}/rating`, {
     method: 'POST',
     headers: {
