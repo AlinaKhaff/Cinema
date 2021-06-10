@@ -684,7 +684,14 @@ button:active {
 .block01__address {
     margin-left: 5rem;
 }
+.block01__address a{
+    color: #fff;
+    text-decoration: none;
+}
 
+.block01__address a:hover{
+    color: #a3cc40;
+}
 .block01__speakers,
 .block01__even,
 .block01__contact,
@@ -783,7 +790,7 @@ button:active {
     padding: 2.7rem 2.9rem;
     max-width: 27.3rem;
     right: 15.5rem;
-    bottom: -7.3rem;
+    bottom:-12.0rem;
 }
 
 .block02__text1 {
@@ -817,7 +824,7 @@ button:active {
 }
 
 .block02__inner {
-    padding-top: 4.8rem;
+    padding-top: 5.9rem;
 }
 
 .block02__pluses {
@@ -1631,6 +1638,13 @@ textarea{
     font-size: 0.6rem;
     margin-bottom: 1.5rem;
 }
+.st-checkbox a{
+    color: #333333;
+    text-decoration: none;
+}
+.st-checkbox a:hover{
+    color: #a3cc40;
+}
 
 .st-checkbox__dot {
     border: 1px solid rgb(170, 243, 77);
@@ -2026,9 +2040,9 @@ textarea{
 
 }
 
-.block03__row {
+/* .block03__row {
     margin-left: 7rem;
-}
+} */
 
 
 .block03_second-text1 {
@@ -2100,8 +2114,8 @@ textarea{
 }
 
 .skeleton-film-box {
-    width: 15.75rem;
-    height: 15.75rem;
+    width: 17.55rem;
+    height: 17.55rem;
     border-radius: 1%;
 
     animation: shine-avatar 1.6s infinite linear;
@@ -2153,4 +2167,12 @@ textarea{
     100% {
         background-color: #A1A1A1;
     }
+  
+}
+/* .block03_second-img>img{
+        width: 92%;
+} */
+.city-click{
+    border: none;
+    background-color: #fff;
 }

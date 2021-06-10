@@ -16,6 +16,9 @@ npm install @babel/preset-env --save-dev
 ```shell
 npm install --save @babel/polyfill
 ```
+
+npm install @fancyapps/fancybox --save
+
 Запустить команду
 
 

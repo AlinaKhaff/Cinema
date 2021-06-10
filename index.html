@@ -15,10 +15,13 @@
 
     <link rel="stylesheet" href="./libs/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="./libs/owl/owl.theme.default.css">
+    <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css">
+    
 
     <script defer src="./libs/polyfill.min.js"></script>
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script defer src="./libs/owl/owl.carousel.min.js"></script>
+    <script defer src="./libs/fancybox/jquery.fancybox.min.js"></script>
     <script defer src="./target/utils.js"></script>
     <script defer src="./target/film.js"></script>
     <script defer src="./target/main.js"></script>
@@ -27,6 +30,7 @@
     <script defer src="./target/blocks-films.js"></script>
     <script defer src="./target/prize.js"></script>
     <script defer src="./target/feedback.js"></script>
+    <script defer src="./target/city.js"></script>
 
 
 </head>
@@ -73,8 +77,8 @@
                                             kino@innopolis.ru
                                         </a>
                                     </div>
-                                    <p>
-                                        <span class=" link-white block01__address"> ул.Спортивная д.1</span>
+                                    <p class=" link-white block01__address">
+                                            <a href="#" id="city-link" data-fancybox data-src="#modal1"></a> ул.Спортивная д.1
                                     </p>
                                     <button class="button1" type="submit" value="Заказать звонок">
                                         <svg width="0.5rem" height="0.5rem">
@@ -902,7 +906,8 @@
                                         fill="#A3CC40" />
                                 </svg>
                             </span>
-                            Я согласен на обработку персональных данных
+                            <a href="https://dovuz.innopolis.university/public/files/%D0%A1%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%B8%D0%B5%20%D0%BD%D0%B0%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D1%83%20%D0%9F%D0%94%D0%BD%20%D0%B4%D0%BB%D1%8F%20%D0%A3%D0%98.pdf">
+                            Я согласен на обработку персональных данных</a>
                         </label>
                         <div class="input-wrap">
                             <button id="submit-review-button" class="button1__big" disabled="disabled">Отправить</button>
@@ -1150,14 +1155,19 @@
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
                                 fill="#A3CC40" />
-                        </svg> </span>
-                    Я согласен на обработку персональных данных
+                        </svg> </span> <a href="https://dovuz.innopolis.university/public/files/%D0%A1%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%B8%D0%B5%20%D0%BD%D0%B0%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D1%83%20%D0%9F%D0%94%D0%BD%20%D0%B4%D0%BB%D1%8F%20%D0%A3%D0%98.pdf">
+                    Я согласен на обработку персональных данных </a>
                 </label>
                 <div class="input-wrap">
                     <button id="submit-prize-button" class="button1__big" disabled="disabled">Отправить</button>
                 </div>
             </form>
         </div>
+    </div>
+
+    <div id="modal1">
+        <input type="text" id="city-input">
+        <div id="search_result"></div>
     </div>
 </body>
 
