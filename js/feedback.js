@@ -127,10 +127,20 @@ function handleSubmit(event) {
                 src: '.modal-success',
                 type: 'inline',
             });
+             name1FieldUtils.reset();
+             email1FieldUtils.reset();
+             reviewFieldUtils.reset();
+             selectPlace.value = 'none';
+             selectPlace.classList.remove(SELECT_SELECTED);
         },
         error: function (msg) {
             $('.ajax-loader').hide();
-            showErrors(msg)
+            showErrors(msg);
+            name1FieldUtils.reset();
+             email1FieldUtils.reset();
+             reviewFieldUtils.reset();
+             selectPlace.value = 'none';
+             selectPlace.classList.remove(SELECT_SELECTED);
         },
         cache: false,
         contentType: false,

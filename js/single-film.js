@@ -48,6 +48,28 @@ const fetchFilmMeta = async () => {
     }
 }
 
+const starsFunction = async () => {
+    const answer = await fetch(`http://inno-ijl.ru/multystub/stc-21-03/film/${filmId}`);
+    const {body} = await answer.json();
+
+    const ratingNumber = document.getElementById('sf-rating-number');
+    const stars = document.querySelectorAll('.rating-star')
+    const rating = body.ratings.reduce((a, b) => parseInt(a) + parseInt(b), 0) / body.ratings.length;
+    const intRating = Math.round(rating);
+    if (isNaN(intRating)) {
+        ratingNumber.textContent = '0.0'
+    } else {
+        ratingNumber.textContent = Math.floor(rating * 10) / 10;
+    }
+
+    for (let i = 0; i < stars.length; i++) {
+        if (i >= intRating) break;
+
+        const star = stars[i];
+        star.classList.add('star-selected')
+    }
+}
+
 const likeIcon = document.getElementById('like-icon');
 const FILM_KEY = `film-${filmId}`;
 const liked = localStorage.getItem(FILM_KEY);
@@ -109,6 +131,8 @@ $('.stars-wrapper').on('click', '.rating-star', async function () {
         })
     });
     // fetchFilmMeta();
+    starsFunction();
+    
 })
 
 fetchKinopoiskFilmData();
