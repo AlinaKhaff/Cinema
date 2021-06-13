@@ -108,7 +108,7 @@ $('.stars-wrapper').on('click', '.rating-star', async function () {
             rating: +this.dataset.value
         })
     });
-    fetchFilmMeta();
+    // fetchFilmMeta();
 })
 
 fetchKinopoiskFilmData();

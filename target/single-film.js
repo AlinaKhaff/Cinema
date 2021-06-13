@@ -92,8 +92,7 @@ $('.stars-wrapper').on('click', '.rating-star', async function () {
     body: JSON.stringify({
       rating: +this.dataset.value
     })
-  });
-  fetchFilmMeta();
+  }); // fetchFilmMeta();
 });
 fetchKinopoiskFilmData();
 fetchFilmMeta();

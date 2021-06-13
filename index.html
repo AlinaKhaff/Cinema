@@ -865,14 +865,15 @@
                         Обратная связь
                     </div>
                     <form id="feedback-form" class="window-form">
+                        <input type = "hidden" name="api_key" value=" sYsXX8zakHHlrlWHseBR">
                         <div class="st-input1 st-input1_focused st-input1_error">
                             <p class="st-input1__label">Полное имя</p>
-                            <input type="text" name="name1" class="st-input1__input required" value="">
+                            <input type="text" name="name" class="st-input1__input required" value="">
                             <p class="st-input1__error-msg">Error message</p>
                         </div>
                         <div class="st-input1 st-input1_focused st-input1_error">
                             <p class="st-input1__label">Введите email</p>
-                            <input type="text" name="email1" class="st-input1__input required" value="">
+                            <input type="text" name="email" class="st-input1__input required" value="">
                             <p class="st-input1__error-msg">Error message</p>
                         </div>
                         <div class="input-wrap ">
@@ -896,7 +897,7 @@
                             <p class="st-input1__error-msg">Error message</p>
                         </div>
                         <label class="st-checkbox">
-                            <input type="checkbox" name="input-checkbox" class="input-checkbox"
+                            <input type="checkbox" name="agree" class="input-checkbox"
                                 onchange="document.getElementById('submit-review-button').disabled = !this.checked;">
                             <span class="st-checkbox__dot">
                                 <svg width="0.68rem" height="0.56rem" viewBox="0 0 11 9" fill="none"
@@ -1169,6 +1170,14 @@
         <input type="text" id="city-input">
         <div id="search_result"></div>
     </div>
+
+
+    <div class="modal modal-success" style="display: none;">
+    Успешно сохранено
+    <div class="success-result"></div>
+    </div>
+
+    <div class="ajax-loader"></div>
 </body>
 
 </html>

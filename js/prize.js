@@ -110,9 +110,15 @@ function handleSubmit(event) {
         return;
 
     }
-    if (!emailValue) {
+    if (!emailValue) {        
         emailFieldUtils.addError('Необходимо указать email');
         return;
+    } else {
+       
+        if(emailValue.indexOf('@') === -1 &&  emailValue.indexOf('.') === -1) {
+            emailFieldUtils.addError('Невалидный  email');
+            return;
+        }
     }
     if (selectPrize.value === 'none') {
         selectPrize.classList.add(ERROR_CLASS_NAME);

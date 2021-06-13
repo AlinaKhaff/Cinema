@@ -1,7 +1,7 @@
-const name1Field = document.querySelector('#block08-form   input[name="name1"]').parentNode;
-const email1Field = document.querySelector('#block08-form   input[name="email1"]').parentNode;
+const name1Field = document.querySelector('#block08-form input[name="name"]').parentNode;
+const email1Field = document.querySelector('#block08-form input[name="email"]').parentNode;
 const selectPlace = document.getElementById('place-numbers');
-const reviewField = document.querySelector('#block08-form   textArea[name="review"]').parentNode;
+const reviewField = document.querySelector('#block08-form textArea[name="review"]').parentNode;
 const form1 = document.getElementById('feedback-form');
 const ERROR_CLASS_NAME1 = 'st-input1_error';
 const FOCUCED_CLASS_NAME1 = 'st-input1_focused';
@@ -79,6 +79,11 @@ function handleSubmit(event) {
   if (!email1Value) {
     email1FieldUtils.addError('Необходимо указать email');
     return;
+  } else {
+    if (email1Value.indexOf('@') === -1 && email1Value.indexOf('.') === -1) {
+      email1FieldUtils.addError('Невалидный  email');
+      return;
+    }
   }
 
   if (selectPlace.value === 'none') {
@@ -89,22 +94,62 @@ function handleSubmit(event) {
   if (!reviewValue) {
     reviewFieldUtils.addError('Необходимо добавить отзыв');
     return;
-  }
+  } // const data = {
+  //     name: name1Value,
+  //     email: email1Value,
+  //     select: selectPlace.value
+  // };
 
-  const data = {
-    name: name1Value,
-    email: email1Value,
-    select: selectPlace.value
-  };
-  const url = new URL('http://inno-ijl.ru/multystub/stc-21-03/feedback');
-  url.search = new URLSearchParams(data).toString();
-  fetch(url.toString()).then(data => data.json()).then(data => {
-    name1FieldUtils.reset();
-    email1FieldUtils.reset();
-    reviewFieldUtils.reset();
-    selectPlace.value = 'none';
-    selectPlace.classList.remove(SELECT_SELECTED);
+
+  const data = new FormData(document.getElementById('feedback-form'));
+  $.ajax({
+    url: 'http://study.xeol.ru/api/new_order',
+    type: 'post',
+    data: data,
+    dataType: 'json',
+    success: function (msg) {
+      $('.success-result').html(msg.success);
+      $.fancybox.open({
+        src: '.modal-success',
+        type: 'inline'
+      });
+    },
+    error: function (msg) {
+      $('.ajax-loader').hide();
+      showErrors(msg);
+    },
+    cache: false,
+    contentType: false,
+    processData: false
   });
+
+  function showErrors(msg) {
+    $('#feedback-form input, #feedback-form select').each(function () {
+      for (let i in msg.responseJSON.errors) {
+        if (i == $(this).attr('name')) {
+          let parent = $(this).closest('.st-input1');
+          if (!parent.lenght) parent = $(this).closest('.input-wrap');
+          if (!parent.lenght) parent = $(this).closest('.st-checkbox');
+          parent.addClass('st-input1_error');
+
+          for (let j in msg.responseJSON.errors[i]) {
+            parent.append('<p class="st-input_error-msg">' + msg.responseJSON.errors[i][j] + '</p>');
+          }
+        }
+      }
+    });
+  } // const url = new URL('http://inno-ijl.ru/multystub/stc-21-03/feedback');
+  // url.search = new URLSearchParams(data).toString();
+  // fetch(url.toString())
+  //     .then(data => data.json())
+  //     .then((data) => {
+  //         name1FieldUtils.reset();
+  //         email1FieldUtils.reset();
+  //         reviewFieldUtils.reset();
+  //         selectPlace.value = 'none';
+  //         selectPlace.classList.remove(SELECT_SELECTED);
+  //     });
+
 }
 
 form1.addEventListener('submit', handleSubmit);

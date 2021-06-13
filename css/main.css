@@ -282,9 +282,9 @@ button {
 
 button:disabled,
 button[disabled] {
-  border: 1px solid #999999;
-  background-color: #cccccc;
-  color: #666666;
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
 }
 
 
@@ -437,7 +437,7 @@ button:active {
 /** Компоненты */
 
 .block01 {
-   
+
     background: no-repeat center/cover url("../images/Backgroound\ Picture.jpg") mediumaquamarine;
     position: relative;
     overflow: hidden;
@@ -455,7 +455,7 @@ button:active {
 
 
 .block04 {
-    
+
     background: no-repeat center/cover url("../images/block04.jpg") transparent;
     position: relative;
     overflow: hidden;
@@ -466,7 +466,7 @@ button:active {
 }
 
 .block07 {
-   
+
     background: no-repeat center/cover url("../images/block06.jpg") mediumaquamarine;
     position: relative;
     overflow: hidden;
@@ -684,14 +684,16 @@ button:active {
 .block01__address {
     margin-left: 5rem;
 }
-.block01__address a{
+
+.block01__address a {
     color: #fff;
     text-decoration: none;
 }
 
-.block01__address a:hover{
+.block01__address a:hover {
     color: #a3cc40;
 }
+
 .block01__speakers,
 .block01__even,
 .block01__contact,
@@ -790,7 +792,7 @@ button:active {
     padding: 2.7rem 2.9rem;
     max-width: 27.3rem;
     right: 15.5rem;
-    bottom:-12.0rem;
+   top: -6rem;
 }
 
 .block02__text1 {
@@ -812,8 +814,8 @@ button:active {
 
 .block02 {
     padding: 0.14rem 0 0;
- 
-    overflow: hidden;
+    position: relative;
+  
     margin-top: -0.15rem;
 }
 
@@ -1565,7 +1567,8 @@ height: 331px;
 
 
 }
-textarea{
+
+textarea {
     resize: none;
     /* margin-top: 0px; */
     /* margin-bottom: 0px; */
@@ -1602,7 +1605,7 @@ textarea{
     background: url(../images/arrow.svg) no-repeat #dedede;
     background-origin: 0px;
     background-position: right;
-    
+
 
 
 
@@ -1638,11 +1641,13 @@ textarea{
     font-size: 0.6rem;
     margin-bottom: 1.5rem;
 }
-.st-checkbox a{
+
+.st-checkbox a {
     color: #333333;
     text-decoration: none;
 }
-.st-checkbox a:hover{
+
+.st-checkbox a:hover {
     color: #a3cc40;
 }
 
@@ -1977,6 +1982,7 @@ textarea{
 .rating {
     color: #687250;
 }
+
 .star-selected {
     color: #A3CC40
 }
@@ -1985,6 +1991,7 @@ textarea{
 .rating:hover {
     color: #A3CC40;
 }
+
 .rating-star:hover~.rating-star {
     color: #687250;
 }
@@ -2167,12 +2174,33 @@ textarea{
     100% {
         background-color: #A1A1A1;
     }
-  
+
 }
+
 /* .block03_second-img>img{
         width: 92%;
 } */
-.city-click{
+.city-click {
     border: none;
     background-color: #fff;
+}
+
+div#modal1 {
+    display: none;
+}
+
+.fancybox-content {
+    border-radius: 1rem;
+}
+
+
+.ajax-loader {
+    display: none;
+    position: fixed;
+    z-index: 1000000;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .5);
 }
