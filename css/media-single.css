@@ -1,3 +1,13 @@
+
+@media screen and (max-width:830px){
+
+.single__bold {
+    
+    font-size: 0.55rem;
+}
+}
+
+
 @media screen and (max-width:768px) {
     .block01_second {
         height: 4rem;
@@ -16,14 +26,32 @@
     .single__left>img {
         margin-left: 3rem;
     }
+    .block03__second-text {
+        margin: 2rem 0rem 2rem 2rem;
+    }
+    .block03__second-text1 {
+        right: 2rem;
+    }
 }
 @media screen and (max-width:480px){
     .single__left>img {
         margin-left: 0.5rem;
     }
 
-}
+
 
 .single__left>img {
     margin-left: 0.5rem;
+}
+
+
+.close {
+   
+    right: 0.2rem;
+    top: 0.5rem;
+   
+    width: 3.18rem;
+    height: 3.18rem;
+   
+}
 }

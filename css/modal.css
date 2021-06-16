@@ -11,8 +11,8 @@
 }
 .close{
     position: absolute;
-    right: 22px;
-    top: 22px;
+    right: 1.37rem;
+    top: 1.37rem;
     
     background: url(../images/close.svg) no-repeat transparent;
     width: 2.18rem;
