@@ -47,28 +47,30 @@ const fetchBlockFilms1 = async () => {
   const j = await result1.json();
 
   if (j.items.length > 0) {
-    renderBlockForCarousel(j.items.slice(0, 6), '#block03__movie-carousel');
-    renderBlockForCarousel(j.items.slice(6, Math.min(12, j.items.length)), '#block03__movie-carousel2');
+    renderBlockForCarousel(j.items.slice(0, 6), '#block03__movie-carousel'); // renderBlockForCarousel(j.items.slice(6, Math.min(12, j.items.length)), '#block03__movie-carousel2');
+
     $(".owl-carousel").owlCarousel({
       loop: true,
       nav: true,
       dots: false,
       responsive: {
-        0: {
+        500: {
           items: 1
+        },
+        400: {
+          items: 2
         }
       }
-    });
-    $("#car2").owlCarousel({
-      loop: true,
-      nav: true,
-      dots: false,
-      responsive: {
-        0: {
-          items: 1
-        }
-      }
-    });
+    }); // $("#car2").owlCarousel({
+    //     loop: true,
+    //     nav: true,
+    //     dots: false,
+    //     responsive:{
+    //         0:{
+    //             items:1
+    //         }
+    //     }
+    // });
   } else {
     $('.block03_second').html('');
   }

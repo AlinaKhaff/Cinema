@@ -17,7 +17,7 @@
     }
 
     .block02__info {
-        top: -6rem;
+        /* top: -6rem; */
         right: 3.9rem;
 
     }
@@ -731,7 +731,7 @@
         padding: 1rem 1.0rem 0rem;
         max-width: 14.0rem;
         right: 5.9rem;
-        top: -4rem;
+        top: 16rem;
     }
 
     .block03__table-wrap {
@@ -918,6 +918,8 @@
 
     .block07__abs {
         padding-bottom: 4.2rem;
+        border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
     }
 
     .block07__date {
@@ -1247,7 +1249,7 @@
 
         max-width: 17rem;
         right: 3.3rem;
-        top: -5rem;
+        top: 15rem;
     }
 
     .block02__text1 {
