@@ -127,7 +127,9 @@
         width: 100%;
         /* Ширина изображений */
     }
-
+    .block07__item>img {
+        width: 12.7rem;
+    }
     .block07__review {
         margin-left: -1.6rem;
     }
@@ -208,7 +210,7 @@
     .menu__wrapper {
         transform: translateX(100%);
         position: fixed;
-        padding: 2rem 6rem 1rem 2rem;
+        padding: 2rem 1rem 5rem 2rem;
         background: #fff;
         top: 0;
         right: 0;
@@ -646,10 +648,10 @@
         margin-top: -6rem;
     }
 
-    .menu__wrapper {
+    /* .menu__wrapper {
 
         padding: 1rem 1rem 2.9rem 2rem;
-    }
+    } */
 
     .block01__row2>ul>li {
 
@@ -758,7 +760,7 @@
     }
 
     .block04 {
-        height: 32.25rem;
+        height: 33.25rem;
     }
 
     .block04_present-descr {

@@ -1,0 +1,27 @@
+{
+    "remotePath": "./alinakhaffcinema/public_html",
+    "host": "92.53.96.174",
+    "username": "cu10246",
+    "password": "Q5ZrkcvNgxSa",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": false,
+    "passive": true,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "agent": null,
+    "allow": [],
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ],
+    "generatedFiles": {
+        "extensionsToInclude": [
+            ""
+        ],
+        "path": ""
+    }
+}
