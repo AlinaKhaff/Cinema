@@ -1,8 +1,8 @@
 {
-    "remotePath": "./alinakhaffcinema/public_html",
-    "host": "92.53.96.174",
-    "username": "cu10246",
-    "password": "Q5ZrkcvNgxSa",
+    "remotePath": "/opt/apache-tomcat-8.5.68/webapps",
+    "host": "185.139.68.179",
+    "username": "root",
+    "password": "xl94HUq24yil",
     "port": 21,
     "secure": false,
     "protocol": "ftp",

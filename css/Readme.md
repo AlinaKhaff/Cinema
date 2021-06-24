@@ -8,7 +8,7 @@
 
 
 ```shell
-npm install --save-dev @babel/core @babel/cli
+npm install --save-dev @babel/core @babel/cli  @babel/preset-env @babel/polyfill
 ```
 ```shell
 npm install @babel/preset-env --save-dev
